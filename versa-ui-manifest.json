@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "manifestVersion": 2,
+  "publishedAt": "2026-09-28T23:19:10.110Z",
+  "minAppVersion": "1.0.14",
+  "platforms": {
+    "chatgpt": {
+      "targets": {
+        "composer": [
+          {
+            "kind": "hook",
+            "css": "#prompt-textarea"
+          },
+          {
+            "kind": "hook",
+            "css": "textarea[data-id=\"root\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[contenteditable=\"true\"][data-virtualkeyboard=\"true\"]"
+          },
+          {
+            "kind": "role",
+            "role": "textbox",
+            "name": "composer"
+          },
+          {
+            "kind": "css",
+            "css": "div.ProseMirror[contenteditable=\"true\"]"
+          }
+        ],
+        "send": [
+          {
+            "kind": "hook",
+            "css": "button[data-testid=\"send-button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "button[data-testid=\"composer-submit-button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "button[data-id=\"send-button\"]"
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "send"
+          }
+        ],
+        "attach": [
+          {
+            "kind": "hook",
+            "css": "input[type=\"file\"]",
+            "present": true
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "attach"
+          }
+        ],
+        "signIn": [
+          {
+            "kind": "hook",
+            "css": "button[data-testid=\"login-button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "a[href*=\"/auth/login\"]"
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "signIn"
+          }
+        ]
+      },
+      "words": {
+        "send": {
+          "source": "^(send|send message|send prompt|submit|إرسال|أرسل|envoyer|envoyer le message)$",
+          "flags": "i"
+        },
+        "signIn": {
+          "source": "^(log ?in|sign ?in|تسجيل الدخول|se connecter|connexion)$",
+          "flags": "i"
+        },
+        "attach": {
+          "source": "(attach|upload|add (photos|files|media)|add media and files|إرفاق|تحميل|إضافة|joindre|importer|ajouter)",
+          "flags": "i"
+        },
+        "composer": {
+          "source": "(message|ask|prompt|enter a prompt|اسأل|رسالة|demander|message)",
+          "flags": "i"
+        }
+      },
+      "phrases": {
+        "busy": [],
+        "done": [],
+        "limit": [],
+        "refusal": [],
+        "error": []
+      },
+      "anchors": {},
+      "flows": {},
+      "selectors": {
+        "composer": [
+          "#prompt-textarea",
+          "textarea[data-id=\"root\"]",
+          "textarea[placeholder*=\"Message\"]",
+          "textarea[placeholder*=\"رسالة\"]",
+          "div.ProseMirror[contenteditable=\"true\"]",
+          "[contenteditable=\"true\"][data-virtualkeyboard=\"true\"]"
+        ],
+        "send": [
+          "button[data-testid=\"send-button\"]",
+          "button[data-testid=\"composer-submit-button\"]",
+          "button[data-id=\"send-button\"]",
+          "button[aria-label=\"Send prompt\"]",
+          "button[aria-label=\"Send message\"]",
+          "button[aria-label=\"إرسال\"]",
+          "button[aria-label*=\"Send\"]",
+          "button[aria-label*=\"send\"]"
+        ],
+        "stop": [
+          "button[data-testid=\"stop-button\"]",
+          "button[aria-label*=\"Stop generating\"]",
+          "button[aria-label*=\"إيقاف\"]"
+        ],
+        "busy": [
+          "button[data-testid=\"stop-button\"]",
+          "button[aria-label*=\"Stop generating\"]",
+          "button[aria-label*=\"إيقاف\"]",
+          ".result-streaming",
+          "[data-testid=\"stop-button\"]"
+        ],
+        "image": [
+          "div[id^=\"image-\"] img[src]",
+          "img[alt^=\"Generated image\"]",
+          "img[src*=\"/backend-api/estuary/content\"]",
+          "img[src*=\"oaiusercontent\"]",
+          "[data-testid=\"image-gen-card\"] img[src]"
+        ],
+        "gptImage": [
+          "[data-testid=\"image-gen-card\"] img",
+          "[data-testid*=\"image-gen\"] img",
+          "div[id^=\"image-\"] img",
+          "img[alt^=\"Generated image\"]",
+          "img[src*=\"oaiusercontent\"]",
+          "img[src*=\"/backend-api/estuary/content\"]"
+        ],
+        "attach": [
+          "form button[data-testid=\"composer-plus-btn\"]",
+          "form button[aria-label*=\"Attach\" i]",
+          "form button[aria-label*=\"Add files\" i]",
+          "form button[aria-label*=\"Add photos\" i]",
+          "form button[aria-label*=\"Add photos and files\" i]",
+          "form button[aria-haspopup=\"menu\"]",
+          "form button[aria-label=\"+\"]",
+          "button[data-testid=\"composer-plus-btn\"]",
+          "button[aria-label*=\"Attach\" i]",
+          "button[aria-label*=\"Add files\" i]",
+          "button[aria-label*=\"Add photos\" i]",
+          "button[aria-label=\"+\"]"
+        ],
+        "signIn": [
+          "a[href*=\"/auth/login\"]",
+          "button[data-testid=\"login-button\"]",
+          "[data-testid=\"login-button\"]"
+        ]
+      }
+    },
+    "gemini": {
+      "targets": {
+        "composer": [
+          {
+            "kind": "hook",
+            "css": "rich-textarea [contenteditable=\"true\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"textbox\"][contenteditable=\"true\"]"
+          },
+          {
+            "kind": "role",
+            "role": "textbox",
+            "name": "composer"
+          },
+          {
+            "kind": "css",
+            "css": "rich-textarea .ql-editor[contenteditable=\"true\"]"
+          },
+          {
+            "kind": "css",
+            "css": ".input-area rich-textarea .ql-editor"
+          }
+        ],
+        "send": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "send"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label=\"Send message\"]"
+          },
+          {
+            "kind": "css",
+            "css": ".send-button"
+          }
+        ],
+        "attach": [
+          {
+            "kind": "hook",
+            "css": "input-area-v2 button[aria-haspopup=\"menu\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "input[type=\"file\"]",
+            "present": true
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "attach"
+          },
+          {
+            "kind": "css",
+            "css": ".menu-button.gem-menu-button"
+          }
+        ],
+        "signIn": [
+          {
+            "kind": "hook",
+            "css": "a[href*=\"accounts.google.com/ServiceLogin\"]"
+          },
+          {
+            "kind": "role",
+            "role": "link",
+            "name": "signIn"
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "signIn"
+          }
+        ]
+      },
+      "words": {
+        "send": {
+          "source": "^(send|send message|send prompt|submit|إرسال|أرسل|envoyer|envoyer le message)$",
+          "flags": "i"
+        },
+        "signIn": {
+          "source": "^(log ?in|sign ?in|تسجيل الدخول|se connecter|connexion)$",
+          "flags": "i"
+        },
+        "attach": {
+          "source": "(attach|upload|add (photos|files|media)|add media and files|إرفاق|تحميل|إضافة|joindre|importer|ajouter)",
+          "flags": "i"
+        },
+        "composer": {
+          "source": "(message|ask|prompt|enter a prompt|اسأل|رسالة|demander|message)",
+          "flags": "i"
+        }
+      },
+      "phrases": {
+        "busy": [],
+        "done": [],
+        "limit": [],
+        "refusal": [],
+        "error": []
+      },
+      "anchors": {},
+      "flows": {},
+      "selectors": {
+        "composer": [
+          "rich-textarea [contenteditable=\"true\"]",
+          "rich-textarea .ql-editor[contenteditable=\"true\"][aria-label*=\"Gemini\" i]",
+          "rich-textarea .ql-editor[contenteditable=\"true\"][aria-label*=\"prompt\" i]",
+          "rich-textarea .ql-editor[contenteditable=\"true\"]",
+          "[role=\"textbox\"][aria-label*=\"Gemini\" i]",
+          "[role=\"textbox\"][aria-label*=\"prompt\" i]",
+          "[contenteditable=\"true\"][data-placeholder*=\"Gemini\" i]",
+          "[contenteditable=\"true\"][data-placeholder*=\"prompt\" i]",
+          "textarea[aria-label*=\"prompt\" i]",
+          "textarea[placeholder*=\"Gemini\" i]",
+          "chat-app rich-textarea .ql-editor",
+          "gemini-chat-app rich-textarea .ql-editor",
+          ".input-area rich-textarea .ql-editor"
+        ],
+        "send": [
+          "button[aria-label=\"Send message\"]",
+          "input-area-v2 button[aria-label=\"Send message\"]",
+          "input-container button[aria-label=\"Send message\"]",
+          "button[aria-label*=\"Send\" i]",
+          "button[mattooltip*=\"Send\" i]",
+          ".send-button"
+        ],
+        "stop": [
+          "button[aria-label=\"Stop response\"]",
+          "button[aria-label=\"Stop generating\"]",
+          "button[aria-label*=\"Stop\" i]",
+          "input-area-v2 button[aria-label*=\"Stop\" i]",
+          "input-container button[aria-label*=\"Stop\" i]"
+        ],
+        "busy": [
+          "button[aria-label=\"Stop response\"]",
+          "button[aria-label=\"Stop generating\"]",
+          "button[aria-label*=\"Stop\" i]",
+          ".model-response-label-announcer[aria-busy=\"true\"]",
+          "thinking-overlay",
+          ".response-container-header-processing-state"
+        ],
+        "attach": [
+          "button[aria-label=\"Upload & tools\"]",
+          "button[aria-label*=\"Upload & tools\" i]",
+          "button[aria-label*=\"Upload and tools\" i]",
+          "gem-icon-button[arialabel*=\"Upload\" i] button",
+          "button[aria-label*=\"Open upload file menu\" i]",
+          "button[aria-label*=\"Upload files\" i]",
+          "button[aria-label*=\"Add files\" i]",
+          "input-area-v2 button[aria-haspopup=\"menu\"]",
+          "input-container button[aria-haspopup=\"menu\"]",
+          ".menu-button.gem-menu-button"
+        ],
+        "attachMenu": [
+          "[role=\"menuitem\"]",
+          "[role=\"menuitemradio\"]",
+          "[role=\"option\"]",
+          "button.mat-mdc-menu-item",
+          ".mat-mdc-menu-item",
+          "button.mat-mdc-list-item",
+          "toolbox-drawer button",
+          ".toolbox-drawer-item"
+        ],
+        "assistantMessage": "model-response, response-container, chat-app message-content, .message-content",
+        "assistantText": "model-response message-content, response-container .message-content, chat-app message-content, .message-content"
+      }
+    },
+    "meta": {
+      "targets": {
+        "composer": [
+          {
+            "kind": "hook",
+            "css": "[contenteditable=\"true\"][role=\"textbox\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-lexical-editor=\"true\"][contenteditable=\"true\"]"
+          },
+          {
+            "kind": "role",
+            "role": "textbox",
+            "name": "composer"
+          },
+          {
+            "kind": "css",
+            "css": "div[aria-placeholder*=\"Ask\" i][contenteditable=\"true\"]"
+          }
+        ],
+        "send": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "send"
+          },
+          {
+            "kind": "css",
+            "css": "div[role=\"button\"][aria-label*=\"Send\" i]"
+          }
+        ],
+        "attach": [
+          {
+            "kind": "hook",
+            "css": "input[type=\"file\"]",
+            "present": true
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "attach"
+          }
+        ],
+        "signIn": [
+          {
+            "kind": "hook",
+            "css": "a[href*=\"facebook.com/login\"]"
+          },
+          {
+            "kind": "role",
+            "role": "link",
+            "name": "signIn"
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "signIn"
+          }
+        ]
+      },
+      "words": {
+        "send": {
+          "source": "^(send|send message|send prompt|submit|إرسال|أرسل|envoyer|envoyer le message)$",
+          "flags": "i"
+        },
+        "signIn": {
+          "source": "^(log ?in|sign ?in|تسجيل الدخول|se connecter|connexion)$",
+          "flags": "i"
+        },
+        "attach": {
+          "source": "(attach|upload|add (photos|files|media)|add media and files|إرفاق|تحميل|إضافة|joindre|importer|ajouter)",
+          "flags": "i"
+        },
+        "composer": {
+          "source": "(message|ask|prompt|enter a prompt|اسأل|رسالة|demander|message)",
+          "flags": "i"
+        }
+      },
+      "phrases": {
+        "busy": [],
+        "done": [],
+        "limit": [],
+        "refusal": [],
+        "error": []
+      },
+      "anchors": {},
+      "flows": {},
+      "selectors": {
+        "composer": [
+          "[contenteditable=\"true\"][role=\"textbox\"]",
+          "[data-lexical-editor=\"true\"][contenteditable=\"true\"]",
+          "div[aria-label*=\"Ask Meta\" i][contenteditable=\"true\"]",
+          "div[aria-placeholder*=\"Ask\" i][contenteditable=\"true\"]",
+          "div[aria-placeholder*=\"Meta\" i][contenteditable=\"true\"]",
+          "[role=\"textbox\"][contenteditable=\"true\"]",
+          "textarea[placeholder*=\"Ask Meta\" i]",
+          "textarea[placeholder*=\"Ask\" i]",
+          "textarea[aria-label*=\"Ask\" i]"
+        ],
+        "send": [
+          "div[role=\"button\"][aria-label*=\"Send\" i]",
+          "svg[aria-label*=\"Send\" i]",
+          "button[aria-label=\"Submit\"]",
+          "button[aria-label=\"Send\"]",
+          "button[aria-label*=\"Send\" i]",
+          "button[type=\"submit\"]"
+        ],
+        "stop": [
+          "button[aria-label*=\"Stop\" i]",
+          "button[aria-label*=\"Cancel\" i]"
+        ],
+        "busy": [
+          "[aria-busy=\"true\"]",
+          "[class*=\"loading\" i]",
+          "[class*=\"spinner\" i]",
+          "button[aria-label*=\"Stop\" i]"
+        ],
+        "assistant": "[role=\"article\"], [data-scope=\"assistant\"], [data-author=\"assistant\"]",
+        "signIn": [
+          "a[href*=\"login\"]",
+          "button[aria-label*=\"Log in\" i]",
+          "button[aria-label*=\"Sign in\" i]",
+          "[aria-label*=\"Log in\" i]",
+          "[aria-label*=\"Sign in\" i]"
+        ]
+      }
+    }
+  }
+}
