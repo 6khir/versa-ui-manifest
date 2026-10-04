@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": 3,
-  "publishedAt": "2026-09-28T23:52:06.683Z",
+  "manifestVersion": 4,
+  "publishedAt": "2026-10-04T13:03:24.833Z",
   "minAppVersion": "1.0.14",
   "platforms": {
     "chatgpt": {
@@ -74,6 +74,384 @@
             "role": "button",
             "name": "signIn"
           }
+        ],
+        "notice": [
+          {
+            "kind": "hook",
+            "css": "[role=\"alert\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"dialog\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[aria-live=\"assertive\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"toast\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"limit\"]"
+          }
+        ],
+        "captchaFrame": [
+          {
+            "kind": "hook",
+            "css": "iframe[src*=\"recaptcha\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "iframe[src*=\"hcaptcha\"]"
+          }
+        ],
+        "fileInput": [
+          {
+            "kind": "hook",
+            "css": "input[type=\"file\"]"
+          }
+        ],
+        "attachmentChip": [
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove file\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove attachment\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove photo\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"file-thumbnail\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"attachment\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"composer-file\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[alt*=\"preview\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[src^=\"data:image\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label*=\"Remove\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 img[src^=\"data:image\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview img"
+          },
+          {
+            "kind": "css",
+            "css": "file-preview img"
+          },
+          {
+            "kind": "css",
+            "css": "rich-textarea img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"Remove attached\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "[data-test-id*=\"attachment\"] img"
+          },
+          {
+            "kind": "css",
+            "css": "img[src^=\"blob:\"][alt*=\"upload\" i]"
+          }
+        ],
+        "removeAttachmentButton": [
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove file\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove attachment\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove photo\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label*=\"Remove\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview button"
+          },
+          {
+            "kind": "css",
+            "css": "file-preview button[aria-label*=\"Remove\" i]"
+          }
+        ],
+        "uploadProgress": [
+          {
+            "kind": "css",
+            "css": "form [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form .animate-spin"
+          },
+          {
+            "kind": "css",
+            "css": "form [class*=\"progress\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [class*=\"loading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form svg circle[stroke-dasharray]"
+          },
+          {
+            "kind": "css",
+            "css": "[data-testid*=\"upload-progress\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"Uploading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"uploading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-progress"
+          },
+          {
+            "kind": "css",
+            "css": "file-upload-progress"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 mat-progress-spinner"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview mat-progress-spinner"
+          }
+        ],
+        "assistantMessageExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"assistant\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"assistant\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": ".message-content"
+          },
+          {
+            "kind": "hook",
+            "css": "model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": ".model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-turn"
+          }
+        ],
+        "userTurnExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "user-query"
+          }
+        ],
+        "imageSurfaceExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-testid=\"image-gen-card\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"image-gen\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "div[id^=\"image-\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "generated-image"
+          },
+          {
+            "kind": "hook",
+            "css": "single-image"
+          },
+          {
+            "kind": "hook",
+            "css": "image-viewer"
+          },
+          {
+            "kind": "hook",
+            "css": "media-viewer"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": "picture"
+          },
+          {
+            "kind": "hook",
+            "css": "div[data-pressable-container=\"true\"]"
+          }
+        ],
+        "replyControls": [
+          {
+            "kind": "hook",
+            "css": "button"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "a"
+          }
+        ],
+        "userTurn": [
+          {
+            "kind": "hook",
+            "css": "user-query"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"user\"]"
+          }
+        ],
+        "dropHostDocument": [
+          {
+            "kind": "hook",
+            "css": "input-area-v2"
+          },
+          {
+            "kind": "hook",
+            "css": ".input-area"
+          }
+        ],
+        "fallbackImage": [
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Generated image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Created with Imagen\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Meta AI\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "generated-image img"
+          },
+          {
+            "kind": "css",
+            "css": "single-image img"
+          },
+          {
+            "kind": "css",
+            "css": "model-response img"
+          },
+          {
+            "kind": "css",
+            "css": "response-container img"
+          },
+          {
+            "kind": "css",
+            "css": ".message-content img"
+          }
         ]
       },
       "words": {
@@ -92,17 +470,559 @@
         "composer": {
           "source": "(message|ask|prompt|enter a prompt|اسأل|رسالة|demander|message)",
           "flags": "i"
+        },
+        "signInRole": {
+          "source": "^(log in|sign in|تسجيل الدخول|connexion)$",
+          "flags": "i"
+        },
+        "signInName": {
+          "source": "^(sign in|log in)$",
+          "flags": "i"
+        },
+        "sendButton": {
+          "source": "^\\s*(send|submit|إرسال|أرسل|envoyer|enviar|invia|senden)(?=\\s|$)(?![^]*feedback)",
+          "flags": "i"
+        },
+        "stop": {
+          "source": "^\\s*(stop|stop response|stop generating|arr[êe]ter|detener|parar|停止|إيقاف)\\b",
+          "flags": "i"
+        },
+        "showMore": {
+          "source": "show more|show all|expand|see more|view more|show full",
+          "flags": "i"
+        },
+        "showMoreCollapsed": {
+          "source": "show more|see more|view more|show full|expand",
+          "flags": "i"
+        },
+        "uploadMenuExclude": {
+          "source": "camera|take photo|screenshot|google drive|onedrive|dropbox|connect|apps|gpt|canvas|search|sora|imagen|create image|video|music",
+          "flags": "i"
+        },
+        "uploadMenuItem": {
+          "source": "photo|file|upload|computer|device|image|صور|ملف|إرفاق|fichier|add",
+          "flags": "i"
         }
       },
       "phrases": {
-        "busy": [],
+        "busy": [
+          {
+            "source": "generating image",
+            "flags": "i"
+          },
+          {
+            "source": "creating image",
+            "flags": "i"
+          },
+          {
+            "source": "generating video",
+            "flags": "i"
+          },
+          {
+            "source": "creating video",
+            "flags": "i"
+          },
+          {
+            "source": "generating your video",
+            "flags": "i"
+          },
+          {
+            "source": "generating",
+            "flags": "i"
+          },
+          {
+            "source": "creating",
+            "flags": "i"
+          },
+          {
+            "source": "veo",
+            "flags": "i"
+          },
+          {
+            "source": "finishing up",
+            "flags": "i"
+          },
+          {
+            "source": "finalizing image",
+            "flags": "i"
+          },
+          {
+            "source": "finalizing video",
+            "flags": "i"
+          }
+        ],
         "done": [],
-        "limit": [],
+        "limit": [
+          {
+            "source": "quota exceeded",
+            "flags": "i"
+          },
+          {
+            "source": "you have reached your quota",
+            "flags": "i"
+          },
+          {
+            "source": "usage (?:cap|limit)",
+            "flags": "i"
+          },
+          {
+            "source": "you(?:'|’)ve reached (?:the|your) (?:current )?(?:usage |image )?limit",
+            "flags": "i"
+          },
+          {
+            "source": "usage cap",
+            "flags": "i"
+          },
+          {
+            "source": "image generation limit",
+            "flags": "i"
+          },
+          {
+            "source": "limit resets?",
+            "flags": "i"
+          },
+          {
+            "source": "try again after",
+            "flags": "i"
+          },
+          {
+            "source": "try again in",
+            "flags": "i"
+          },
+          {
+            "source": "لقد وصلت.*الحد",
+            "flags": "i"
+          },
+          {
+            "source": "تجاوزت.*الحد",
+            "flags": "i"
+          },
+          {
+            "source": "limite.*atteinte",
+            "flags": "i"
+          }
+        ],
         "refusal": [],
-        "error": []
+        "error": [
+          {
+            "source": "couldn(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "unable to generate",
+            "flags": "i"
+          },
+          {
+            "source": "something went wrong while generating",
+            "flags": "i"
+          },
+          {
+            "source": "image generation failed",
+            "flags": "i"
+          },
+          {
+            "source": "incorrectly classify|incorrectly classifying",
+            "flags": "i"
+          },
+          {
+            "source": "edit of an existing image",
+            "flags": "i"
+          },
+          {
+            "source": "won(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "cannot generate|can(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "will not generate",
+            "flags": "i"
+          },
+          {
+            "source": "refus(?:e|es|ing) to generate",
+            "flags": "i"
+          },
+          {
+            "source": "unable to create",
+            "flags": "i"
+          },
+          {
+            "source": "cannot create|can(?:'|’)t create",
+            "flags": "i"
+          },
+          {
+            "source": "will not create",
+            "flags": "i"
+          },
+          {
+            "source": "not generate",
+            "flags": "i"
+          },
+          {
+            "source": "not generating",
+            "flags": "i"
+          },
+          {
+            "source": "I am unable to",
+            "flags": "i"
+          },
+          {
+            "source": "I cannot",
+            "flags": "i"
+          },
+          {
+            "source": "I can't",
+            "flags": "i"
+          },
+          {
+            "source": "no image (?:was|is|will be) generated",
+            "flags": "i"
+          },
+          {
+            "source": "encountering (?:a|an) (?:problem|issue|error)",
+            "flags": "i"
+          },
+          {
+            "source": "(?:i am|i'm|i’m) having (?:some )?trouble",
+            "flags": "i"
+          },
+          {
+            "source": "ran into (?:a|an) (?:problem|issue|error)",
+            "flags": "i"
+          },
+          {
+            "source": "something went wrong",
+            "flags": "i"
+          },
+          {
+            "source": "please try again",
+            "flags": "i"
+          },
+          {
+            "source": "try (?:that|this|again) (?:again|in a moment)",
+            "flags": "i"
+          },
+          {
+            "source": "I have unified all .{0,120}instruction",
+            "flags": "i"
+          },
+          {
+            "source": "wait for your explicit instructions",
+            "flags": "i"
+          },
+          {
+            "source": "instead of (?:a new|generating)",
+            "flags": "i"
+          },
+          {
+            "source": "تعذر.*إنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "لم يقم بإنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "لا يمكن إنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "impossible de générer",
+            "flags": "i"
+          }
+        ],
+        "throttle": [
+          {
+            "source": "too many requests",
+            "flags": "i"
+          },
+          {
+            "source": "making requests too quickly",
+            "flags": "i"
+          },
+          {
+            "source": "temporarily limited access to your conversations",
+            "flags": "i"
+          },
+          {
+            "source": "please wait a few minutes before trying again",
+            "flags": "i"
+          }
+        ],
+        "captcha": [
+          {
+            "source": "captcha|recaptcha|hcaptcha|unusual traffic|verify you are (a )?human",
+            "flags": "i"
+          }
+        ],
+        "offline": [
+          {
+            "source": "chrome-error:\\/\\/|ERR_INTERNET_DISCONNECTED|ERR_NAME_NOT_RESOLVED|you are offline|no internet",
+            "flags": "i"
+          }
+        ],
+        "authRequired": [
+          {
+            "source": "log in to continue|sign in to continue|تسجيل الدخول للمتابعة|connectez-vous pour continuer",
+            "flags": "i"
+          }
+        ],
+        "referenceRequested": [
+          {
+            "source": "please (?:provide|upload|attach|share) (?:the|a) (?:reference|character|sample|source) image",
+            "flags": "i"
+          },
+          {
+            "source": "provide (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "upload (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "need (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "send (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "working with a reference",
+            "flags": "i"
+          },
+          {
+            "source": "based on the reference",
+            "flags": "i"
+          },
+          {
+            "source": "please upload the \\d+ exact page images",
+            "flags": "i"
+          },
+          {
+            "source": "upload the \\d+ exact page images",
+            "flags": "i"
+          },
+          {
+            "source": "please upload the .{0,80}page images",
+            "flags": "i"
+          },
+          {
+            "source": "upload the .{0,40}page images directly in this chat",
+            "flags": "i"
+          },
+          {
+            "source": "aren't available to the image editor",
+            "flags": "i"
+          },
+          {
+            "source": "are not available to the image editor",
+            "flags": "i"
+          },
+          {
+            "source": "usable image targets",
+            "flags": "i"
+          },
+          {
+            "source": "usable visual inputs",
+            "flags": "i"
+          },
+          {
+            "source": "as usable (?:visual|image) inputs",
+            "flags": "i"
+          },
+          {
+            "source": "image[- ]generation tool does not (?:currently )?have",
+            "flags": "i"
+          },
+          {
+            "source": "file[- ]library material",
+            "flags": "i"
+          },
+          {
+            "source": "I can see the reference PDF",
+            "flags": "i"
+          },
+          {
+            "source": "reference PDF, but the four page images",
+            "flags": "i"
+          },
+          {
+            "source": "صورة مرجعية",
+            "flags": "i"
+          },
+          {
+            "source": "إرفاق.*صورة",
+            "flags": "i"
+          },
+          {
+            "source": "تقديم.*صورة",
+            "flags": "i"
+          },
+          {
+            "source": "image de référence",
+            "flags": "i"
+          }
+        ]
       },
       "anchors": {},
-      "flows": {},
+      "flows": {
+        "fillComposer": [
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "fill"
+          },
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "insertText",
+            "note": "only when fill throws (Quill <rich-textarea>, d1fe25da)"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "spaceBackspace"
+          },
+          {
+            "do": "verify",
+            "target": "composer",
+            "strategy": "composerContains"
+          },
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "domInject"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "nudge"
+          },
+          {
+            "do": "verify",
+            "target": "composer",
+            "strategy": "composerContains"
+          }
+        ],
+        "send": [
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "cssList"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "roleName"
+          },
+          {
+            "do": "wait",
+            "target": "composer",
+            "strategy": "sendWake",
+            "note": "nudge the composer at timings.sendNudgeAtMs (c41f3741)"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "cssAny",
+            "note": "after the budget: any visible send"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "roleAny"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "enter",
+            "key": "Enter",
+            "note": "when the click fails or the button is disabled"
+          }
+        ],
+        "attach": [
+          {
+            "do": "upload",
+            "target": "attach",
+            "strategy": "fileChooser"
+          },
+          {
+            "do": "upload",
+            "target": "attach",
+            "strategy": "fileChooserOneByOne"
+          },
+          {
+            "do": "upload",
+            "target": "fileInput",
+            "strategy": "hiddenFileInput"
+          },
+          {
+            "do": "upload",
+            "target": "composer",
+            "strategy": "clipboardPaste"
+          },
+          {
+            "do": "upload",
+            "strategy": "syntheticDrop"
+          },
+          {
+            "do": "upload",
+            "target": "composer",
+            "strategy": "syntheticPaste"
+          },
+          {
+            "do": "upload",
+            "target": "dropHostDocument",
+            "strategy": "syntheticDropOnDocument"
+          }
+        ],
+        "newChat": [
+          {
+            "do": "verify",
+            "strategy": "urlHasNoChatId"
+          },
+          {
+            "do": "verify",
+            "target": "userTurn",
+            "strategy": "noUserTurns"
+          },
+          {
+            "do": "wait",
+            "strategy": "settle",
+            "ms": 1500
+          }
+        ],
+        "waitReply": [
+          {
+            "do": "read",
+            "target": "stop",
+            "strategy": "stopControl"
+          },
+          {
+            "do": "read",
+            "target": "busy",
+            "strategy": "busyMarkers"
+          },
+          {
+            "do": "read",
+            "strategy": "draftText"
+          },
+          {
+            "do": "read",
+            "target": "replyControls",
+            "strategy": "collapsed"
+          },
+          {
+            "do": "click",
+            "target": "replyControls",
+            "strategy": "expandCollapsed"
+          }
+        ]
+      },
       "selectors": {
         "composer": [
           "#prompt-textarea",
@@ -168,6 +1088,17 @@
           "button[data-testid=\"login-button\"]",
           "[data-testid=\"login-button\"]"
         ]
+      },
+      "regions": {
+        "chatList": {
+          "css": "bard-sidenav, side-navigation-v2, mat-sidenav, nav, [role=\"navigation\"], conversations-list, [data-test-id*=\"conversation\" i], [class*=\"conversation\" i], [class*=\"chat-history\" i]",
+          "linkCss": "a[href*=\"/app/\"], a[href*=\"/gem/\"], a[href*=\"/c/\"]",
+          "href": {
+            "source": "\\/(?:app|gem|c)\\/",
+            "flags": ""
+          },
+          "note": "The side list of old chats (3be6a498, 09-20): no name or text lookup may land in it."
+        }
       }
     },
     "gemini": {
@@ -245,6 +1176,1228 @@
             "role": "button",
             "name": "signIn"
           }
+        ],
+        "notice": [
+          {
+            "kind": "hook",
+            "css": "[role=\"alert\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"dialog\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[aria-live=\"assertive\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"toast\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"limit\"]"
+          }
+        ],
+        "captchaFrame": [
+          {
+            "kind": "hook",
+            "css": "iframe[src*=\"recaptcha\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "iframe[src*=\"hcaptcha\"]"
+          }
+        ],
+        "fileInput": [
+          {
+            "kind": "hook",
+            "css": "input[type=\"file\"]"
+          }
+        ],
+        "attachmentChip": [
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove file\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove attachment\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove photo\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"file-thumbnail\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"attachment\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"composer-file\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[alt*=\"preview\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[src^=\"data:image\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label*=\"Remove\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 img[src^=\"data:image\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview img"
+          },
+          {
+            "kind": "css",
+            "css": "file-preview img"
+          },
+          {
+            "kind": "css",
+            "css": "rich-textarea img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"Remove attached\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "[data-test-id*=\"attachment\"] img"
+          },
+          {
+            "kind": "css",
+            "css": "img[src^=\"blob:\"][alt*=\"upload\" i]"
+          }
+        ],
+        "removeAttachmentButton": [
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove file\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove attachment\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove photo\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label*=\"Remove\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview button"
+          },
+          {
+            "kind": "css",
+            "css": "file-preview button[aria-label*=\"Remove\" i]"
+          }
+        ],
+        "uploadProgress": [
+          {
+            "kind": "css",
+            "css": "form [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form .animate-spin"
+          },
+          {
+            "kind": "css",
+            "css": "form [class*=\"progress\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [class*=\"loading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form svg circle[stroke-dasharray]"
+          },
+          {
+            "kind": "css",
+            "css": "[data-testid*=\"upload-progress\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"Uploading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"uploading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-progress"
+          },
+          {
+            "kind": "css",
+            "css": "file-upload-progress"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 mat-progress-spinner"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview mat-progress-spinner"
+          }
+        ],
+        "assistantMessageExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"assistant\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"assistant\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": ".message-content"
+          },
+          {
+            "kind": "hook",
+            "css": "model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": ".model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-turn"
+          }
+        ],
+        "userTurnExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "user-query"
+          }
+        ],
+        "imageSurfaceExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-testid=\"image-gen-card\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"image-gen\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "div[id^=\"image-\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "generated-image"
+          },
+          {
+            "kind": "hook",
+            "css": "single-image"
+          },
+          {
+            "kind": "hook",
+            "css": "image-viewer"
+          },
+          {
+            "kind": "hook",
+            "css": "media-viewer"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": "picture"
+          },
+          {
+            "kind": "hook",
+            "css": "div[data-pressable-container=\"true\"]"
+          }
+        ],
+        "replyControls": [
+          {
+            "kind": "hook",
+            "css": "button"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "a"
+          }
+        ],
+        "userTurn": [
+          {
+            "kind": "hook",
+            "css": "user-query"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"user\"]"
+          }
+        ],
+        "dropHostDocument": [
+          {
+            "kind": "hook",
+            "css": "input-area-v2"
+          },
+          {
+            "kind": "hook",
+            "css": ".input-area"
+          }
+        ],
+        "fallbackImage": [
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Generated image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Created with Imagen\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Meta AI\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "generated-image img"
+          },
+          {
+            "kind": "css",
+            "css": "single-image img"
+          },
+          {
+            "kind": "css",
+            "css": "model-response img"
+          },
+          {
+            "kind": "css",
+            "css": "response-container img"
+          },
+          {
+            "kind": "css",
+            "css": ".message-content img"
+          }
+        ],
+        "stop": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "stop"
+          },
+          {
+            "kind": "css",
+            "css": "button[aria-label=\"Stop response\"]"
+          },
+          {
+            "kind": "css",
+            "css": "button[aria-label=\"Stop generating\"]"
+          },
+          {
+            "kind": "css",
+            "css": "button[aria-label*=\"Stop\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label*=\"Stop\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-container button[aria-label*=\"Stop\" i]"
+          }
+        ],
+        "idleStop": [
+          {
+            "kind": "css",
+            "css": "button[aria-label=\"Stop response\"]"
+          },
+          {
+            "kind": "css",
+            "css": "button[aria-label=\"Stop generating\"]"
+          }
+        ],
+        "busy": [
+          {
+            "kind": "css",
+            "css": "button[aria-label=\"Stop response\"]"
+          },
+          {
+            "kind": "css",
+            "css": "button[aria-label=\"Stop generating\"]"
+          },
+          {
+            "kind": "css",
+            "css": "button[aria-label*=\"Stop\" i]"
+          },
+          {
+            "kind": "css",
+            "css": ".model-response-label-announcer[aria-busy=\"true\"]"
+          },
+          {
+            "kind": "css",
+            "css": "thinking-overlay"
+          },
+          {
+            "kind": "css",
+            "css": ".response-container-header-processing-state"
+          }
+        ],
+        "previewStop": [
+          {
+            "kind": "css",
+            "css": "button[aria-label*=\"Stop\" i]"
+          }
+        ],
+        "previewSpinner": [
+          {
+            "kind": "css",
+            "css": ".model-response-label-announcer[aria-busy=\"true\"]"
+          },
+          {
+            "kind": "css",
+            "css": "thinking-overlay"
+          },
+          {
+            "kind": "css",
+            "css": ".response-container-header-processing-state"
+          }
+        ],
+        "replyProgress": [
+          {
+            "kind": "hook",
+            "css": "[role=\"progressbar\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "mat-progress-bar"
+          },
+          {
+            "kind": "hook",
+            "css": "mat-spinner"
+          },
+          {
+            "kind": "hook",
+            "css": "[aria-busy=\"true\"]"
+          }
+        ],
+        "errorBanner": [
+          {
+            "kind": "hook",
+            "css": "[role=\"alert\"]"
+          },
+          {
+            "kind": "hook",
+            "css": ".error-container"
+          },
+          {
+            "kind": "hook",
+            "css": ".model-error"
+          },
+          {
+            "kind": "hook",
+            "css": "snack-bar"
+          }
+        ],
+        "previewComposer": [
+          {
+            "kind": "hook",
+            "css": "rich-textarea .ql-editor"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"textbox\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "textarea"
+          }
+        ],
+        "lastReply": [
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          }
+        ],
+        "replyContent": [
+          {
+            "kind": "hook",
+            "css": "message-content"
+          }
+        ],
+        "replies": [
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": "message-content"
+          }
+        ],
+        "anyVideo": [
+          {
+            "kind": "hook",
+            "css": "video"
+          }
+        ],
+        "newChat": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "newChat"
+          }
+        ],
+        "imageTool": [
+          {
+            "kind": "role",
+            "role": "menuitem",
+            "name": "imageTool"
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "imageTool"
+          }
+        ],
+        "imageToolPressed": [
+          {
+            "kind": "hook",
+            "css": "button[aria-pressed=\"true\"][aria-label*=\"Create image\" i]"
+          },
+          {
+            "kind": "hook",
+            "css": "button[aria-pressed=\"true\"][aria-label*=\"Create images\" i]"
+          },
+          {
+            "kind": "hook",
+            "css": "[aria-label*=\"Create images\" i][aria-pressed=\"true\"]"
+          }
+        ],
+        "imageToolArmed": [
+          {
+            "kind": "hook",
+            "css": "button[aria-pressed=\"true\"][aria-label*=\"Create image\" i]"
+          },
+          {
+            "kind": "hook",
+            "css": "button[aria-pressed=\"true\"][aria-label*=\"Create images\" i]"
+          },
+          {
+            "kind": "hook",
+            "css": "[aria-label*=\"Create images\" i][aria-pressed=\"true\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-tool*=\"image\" i][aria-pressed=\"true\"]"
+          }
+        ],
+        "imageToolChip": [
+          {
+            "kind": "text",
+            "text": "imageToolChip"
+          }
+        ],
+        "profilePicture": [
+          {
+            "kind": "hook",
+            "css": "user-profile-picture img:not([src*=\"default-user=\"])"
+          },
+          {
+            "kind": "hook",
+            "css": "user-profile-picture"
+          }
+        ],
+        "signInControl": [
+          {
+            "kind": "hook",
+            "css": "a"
+          },
+          {
+            "kind": "hook",
+            "css": "button"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"link\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"button\"]"
+          }
+        ],
+        "accountChooserEntry": [
+          {
+            "kind": "hook",
+            "css": "[data-identifier]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-email]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-authuser]"
+          }
+        ],
+        "accountChooserText": [
+          {
+            "kind": "hook",
+            "css": "div"
+          },
+          {
+            "kind": "hook",
+            "css": "span"
+          },
+          {
+            "kind": "hook",
+            "css": "li"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"link\"]"
+          }
+        ],
+        "accountChooserClickable": [
+          {
+            "kind": "hook",
+            "css": "[data-identifier]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"link\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "li"
+          },
+          {
+            "kind": "hook",
+            "css": "button"
+          }
+        ],
+        "accountChooserHints": [
+          {
+            "kind": "hook",
+            "css": "[data-identifier][data-authuser]"
+          },
+          {
+            "kind": "hook",
+            "css": "div[data-identifier]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-authuser=\"0\"]"
+          }
+        ],
+        "userTurnImage": [
+          {
+            "kind": "hook",
+            "css": "user-query"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "user-turn"
+          },
+          {
+            "kind": "hook",
+            "css": ".user-turn"
+          }
+        ],
+        "assistantMessage": [
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-app message-content"
+          },
+          {
+            "kind": "hook",
+            "css": ".message-content"
+          }
+        ],
+        "assistantText": [
+          {
+            "kind": "hook",
+            "css": "model-response message-content"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container .message-content"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-app message-content"
+          },
+          {
+            "kind": "hook",
+            "css": ".message-content"
+          }
+        ],
+        "assistantMessageImage": [
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-app message-content"
+          },
+          {
+            "kind": "hook",
+            "css": ".message-content"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"assistant\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": ".model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": ".chat-turn"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-turn"
+          },
+          {
+            "kind": "hook",
+            "css": "conversation-turn"
+          },
+          {
+            "kind": "hook",
+            "css": "div[class*=\"model-response\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "div[class*=\"response-container\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "infinite-scroller"
+          }
+        ],
+        "composerRegionImage": [
+          {
+            "kind": "hook",
+            "css": "form"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"textbox\"]"
+          },
+          {
+            "kind": "hook",
+            "css": ".input-area"
+          },
+          {
+            "kind": "hook",
+            "css": "[contenteditable=\"true\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "rich-textarea"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-window-footer"
+          },
+          {
+            "kind": "hook",
+            "css": "input-area-v2"
+          }
+        ],
+        "chromeRegion": [
+          {
+            "kind": "css",
+            "css": "bot-icon"
+          },
+          {
+            "kind": "css",
+            "css": "gem-icon"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"avatar\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"bot-icon\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"gem-icon\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"conversation-title\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "side-navigation"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"sidebar\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "header"
+          },
+          {
+            "kind": "css",
+            "css": "[role=\"banner\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"toolbar\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"logo\" i]"
+          }
+        ],
+        "generatedImage": [
+          {
+            "kind": "css",
+            "css": "model-response img"
+          },
+          {
+            "kind": "css",
+            "css": "message-content img"
+          },
+          {
+            "kind": "css",
+            "css": "response-container img"
+          },
+          {
+            "kind": "css",
+            "css": "generated-image img"
+          },
+          {
+            "kind": "css",
+            "css": "single-image img"
+          },
+          {
+            "kind": "css",
+            "css": "image-viewer img"
+          },
+          {
+            "kind": "css",
+            "css": "media-viewer img"
+          },
+          {
+            "kind": "css",
+            "css": "picture img"
+          },
+          {
+            "kind": "css",
+            "css": "img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "img[src^=\"data:image\"]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Generated image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Created with Imagen\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Generated by Gemini\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Imagen\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[src*=\"googleusercontent.com\"]"
+          },
+          {
+            "kind": "css",
+            "css": "img[src*=\"lh3.googleusercontent.com\"]"
+          },
+          {
+            "kind": "css",
+            "css": "img"
+          }
+        ],
+        "avatar": [
+          {
+            "kind": "hook",
+            "css": "user-profile-picture"
+          }
+        ],
+        "avatarIcon": [
+          {
+            "kind": "css",
+            "css": ".user-icon"
+          }
+        ],
+        "imageContainer": [
+          {
+            "kind": "hook",
+            "css": "generated-image"
+          },
+          {
+            "kind": "hook",
+            "css": "single-image"
+          },
+          {
+            "kind": "hook",
+            "css": "image-viewer"
+          },
+          {
+            "kind": "hook",
+            "css": "media-viewer"
+          }
+        ],
+        "assistantMessageVideo": [
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-app message-content"
+          },
+          {
+            "kind": "hook",
+            "css": ".message-content"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"assistant\"]"
+          }
+        ],
+        "generatedVideo": [
+          {
+            "kind": "hook",
+            "css": "video"
+          },
+          {
+            "kind": "hook",
+            "css": "generated-video video"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response video"
+          },
+          {
+            "kind": "hook",
+            "css": "media-player video"
+          }
+        ],
+        "videoSource": [
+          {
+            "kind": "hook",
+            "css": "source[type*=\"video\" i]"
+          },
+          {
+            "kind": "hook",
+            "css": "source[src*=\".mp4\" i]"
+          }
+        ],
+        "videoLink": [
+          {
+            "kind": "hook",
+            "css": "a[href]"
+          }
+        ],
+        "composerArea": [
+          {
+            "kind": "hook",
+            "css": "input-area-v2"
+          },
+          {
+            "kind": "hook",
+            "css": "input-container"
+          },
+          {
+            "kind": "hook",
+            "css": ".input-area"
+          }
+        ],
+        "attachmentTile": [
+          {
+            "kind": "css",
+            "css": "uploader-file-preview"
+          },
+          {
+            "kind": "css",
+            "css": "file-preview"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"file-preview\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[class*=\"uploaded-file\"]"
+          }
+        ],
+        "attachmentImageExclude": [
+          {
+            "kind": "hook",
+            "css": "button"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "user-profile-picture"
+          }
+        ],
+        "attachMenu": [
+          {
+            "kind": "css",
+            "css": "[role=\"menuitem\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[role=\"menuitemradio\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[role=\"option\"]"
+          },
+          {
+            "kind": "css",
+            "css": "button.mat-mdc-menu-item"
+          },
+          {
+            "kind": "css",
+            "css": ".mat-mdc-menu-item"
+          },
+          {
+            "kind": "css",
+            "css": "button.mat-mdc-list-item"
+          },
+          {
+            "kind": "css",
+            "css": "toolbox-drawer button"
+          },
+          {
+            "kind": "css",
+            "css": ".toolbox-drawer-item"
+          }
+        ],
+        "dropHost": [
+          {
+            "kind": "hook",
+            "css": "input-area-v2"
+          },
+          {
+            "kind": "hook",
+            "css": "file-drop-indicator"
+          },
+          {
+            "kind": "hook",
+            "css": ".input-area"
+          }
+        ],
+        "gemRecentChatItem": [
+          {
+            "kind": "css",
+            "css": ".bot-recent-chats button.recent-chat-list-item"
+          }
+        ],
+        "conversationTurns": [
+          {
+            "kind": "hook",
+            "css": "user-query"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response"
+          }
+        ],
+        "mainContent": [
+          {
+            "kind": "hook",
+            "css": "main"
+          }
+        ],
+        "composerTools": [
+          {
+            "kind": "hook",
+            "css": "button"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"menuitem\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "toolbox-drawer-item"
+          }
+        ],
+        "modePicker": [
+          {
+            "kind": "hook",
+            "css": "button"
+          }
+        ],
+        "menuItems": [
+          {
+            "kind": "hook",
+            "css": "[role=\"menuitem\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"menuitemradio\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"option\"]"
+          }
+        ],
+        "imageActionButton": [
+          {
+            "kind": "hook",
+            "css": "button"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"button\"]"
+          }
+        ],
+        "gemDeletedBanner": [
+          {
+            "kind": "text",
+            "text": "gemDeleted"
+          }
         ]
       },
       "words": {
@@ -263,17 +2416,858 @@
         "composer": {
           "source": "(message|ask|prompt|enter a prompt|اسأل|رسالة|demander|message)",
           "flags": "i"
+        },
+        "signInRole": {
+          "source": "^(log in|sign in|تسجيل الدخول|connexion)$",
+          "flags": "i"
+        },
+        "signInName": {
+          "source": "^(sign in|log in)$",
+          "flags": "i"
+        },
+        "sendButton": {
+          "source": "^\\s*(send|submit|إرسال|أرسل|envoyer|enviar|invia|senden)(?=\\s|$)(?![^]*feedback)",
+          "flags": "i"
+        },
+        "stop": {
+          "source": "^\\s*(stop|stop response|stop generating|arr[êe]ter|detener|parar|停止|إيقاف)\\b",
+          "flags": "i"
+        },
+        "showMore": {
+          "source": "show more|show all|expand|see more|view more|show full",
+          "flags": "i"
+        },
+        "showMoreCollapsed": {
+          "source": "show more|see more|view more|show full|expand",
+          "flags": "i"
+        },
+        "uploadMenuExclude": {
+          "source": "camera|take photo|screenshot|google drive|onedrive|dropbox|connect|apps|gpt|canvas|search|sora|imagen|create image|video|music",
+          "flags": "i"
+        },
+        "uploadMenuItem": {
+          "source": "photo|file|upload|computer|device|image|صور|ملف|إرفاق|fichier|add",
+          "flags": "i"
+        },
+        "imageTool": {
+          "source": "create images?|generate images?|image generation",
+          "flags": "i"
+        },
+        "imageToolChip": {
+          "source": "create images?",
+          "flags": "i"
+        },
+        "imageToolExclude": {
+          "source": "upload|file|photo|camera|video|music|search|canvas",
+          "flags": "i"
+        },
+        "newChat": {
+          "source": "new chat|start a new chat",
+          "flags": "i"
+        },
+        "continueWithGoogle": {
+          "source": "continue with google",
+          "flags": "i"
+        },
+        "signInHref": {
+          "source": "sign.?in|ServiceLogin",
+          "flags": "i"
+        },
+        "googleAccountsHref": {
+          "source": "accounts\\.google\\.com",
+          "flags": "i"
+        },
+        "accountChooserNoise": {
+          "source": "use another account|add account|create account|remove an account",
+          "flags": "i"
+        },
+        "removeAttachment": {
+          "source": "remove (file|attachment|image|photo)|remove uploaded|^remove$",
+          "flags": "i"
+        },
+        "inlineSrc": {
+          "source": "^(blob:|data:image)",
+          "flags": "i"
+        },
+        "generatedAlt": {
+          "source": "generated image|created with imagen|generated by gemini|imagen",
+          "flags": "i"
+        },
+        "rejectSrc": {
+          "source": "gstatic\\.com\\/lamda|default-user=",
+          "flags": ""
+        },
+        "rejectVideoSrc": {
+          "source": "gstatic\\.com\\/lamda|default-user=|data:image\\/",
+          "flags": "i"
+        },
+        "videoHint": {
+          "source": "\\.mp4(\\?|$)|video\\/mp4|googleusercontent|blob:|googlevideo|veo|generated.video",
+          "flags": "i"
+        },
+        "videoLinkMp4": {
+          "source": "\\.mp4(\\?|$)",
+          "flags": "i"
+        },
+        "videoLinkHint": {
+          "source": "videoplayback|googlevideo|download.*video|generated.video",
+          "flags": "i"
+        },
+        "modelCurrently": {
+          "source": "currently\\s+([A-Za-z0-9.\\- ]+)$",
+          "flags": "i"
+        },
+        "videoTool": {
+          "source": "^videos?$",
+          "flags": "i"
+        },
+        "videoToolArmed": {
+          "source": "deselect\\s+videos?",
+          "flags": "i"
+        },
+        "modePicker": {
+          "source": "open mode picker",
+          "flags": "i"
+        },
+        "proModel": {
+          "source": "\\bPro\\b",
+          "flags": "i"
+        },
+        "notProModel": {
+          "source": "flash|lite|extended",
+          "flags": "i"
+        },
+        "videoWorking": {
+          "source": "generating|creating (?:your )?video|working on it|this may take",
+          "flags": "i"
+        },
+        "replyError": {
+          "source": "something went wrong",
+          "flags": "i"
+        },
+        "videoAnswer": {
+          "source": "\\b(limit|quota|can't|cannot|unable|not able|won't be able|come back tomorrow|try again|polic|upload an image|please upload|image upload|used (?:up )?all)",
+          "flags": "i"
+        },
+        "videoFailed": {
+          "source": "couldn.?t generate (a )?video|failed to generate (the )?video|video generation failed",
+          "flags": "i"
+        },
+        "gemDeleted": {
+          "source": "this conversation was created with a gem that has been deleted",
+          "flags": "i"
+        },
+        "draftImageMode": {
+          "source": "creating your image|create images?\\b|image generation",
+          "flags": "i"
+        },
+        "downloadFullSize": {
+          "source": "download\\s+full|full[- ]?size|taille\\s+r[ée]elle|t[ée]l[ée]charger.*(original|compl[èe]t|taille)|descargar.*(tama[ñn]o\\s+completo|original)|تنزيل|تحميل.*(كامل|الكامل|الأصلي)|下载.*(完整|原始)|完整尺寸",
+          "flags": "i"
+        },
+        "videoRefusal": {
+          "source": "\\b(i can'?t|i cannot|i am not able|i'm not able|i'm unable|i am unable|unable to|not able to|won'?t be able|cannot create|can'?t create|violates|against .{0,20}polic|requires? (an )?image|upload an image|please upload|image upload)",
+          "flags": "i"
+        },
+        "videoQuota": {
+          "source": "\\b(reached your limit|quota|out of .{0,12}credits|limit for video|upgrade to)",
+          "flags": "i"
+        },
+        "tryAgain": {
+          "source": "\\btry again\\b",
+          "flags": "i"
+        },
+        "limitWording": {
+          "source": "\\b(limits?|quota|usage cap)\\b",
+          "flags": "i"
+        },
+        "videoLimit": {
+          "source": "\\b(video generation limit|video limit|daily limit|more videos tomorrow|come back tomorrow|limits? resets?|reached your (?:\\w+ ){0,3}limit|used (?:up )?all (?:of )?your (?:\\w+ ){0,2}(?:video )?generations)",
+          "flags": "i"
+        },
+        "mentionsVideo": {
+          "source": "video|clip|render|on its way|ready|generat|creat",
+          "flags": "i"
         }
       },
       "phrases": {
-        "busy": [],
+        "busy": [
+          {
+            "source": "generating image",
+            "flags": "i"
+          },
+          {
+            "source": "creating image",
+            "flags": "i"
+          },
+          {
+            "source": "generating video",
+            "flags": "i"
+          },
+          {
+            "source": "creating video",
+            "flags": "i"
+          },
+          {
+            "source": "generating your video",
+            "flags": "i"
+          },
+          {
+            "source": "generating",
+            "flags": "i"
+          },
+          {
+            "source": "creating",
+            "flags": "i"
+          },
+          {
+            "source": "veo",
+            "flags": "i"
+          },
+          {
+            "source": "finishing up",
+            "flags": "i"
+          },
+          {
+            "source": "finalizing image",
+            "flags": "i"
+          },
+          {
+            "source": "finalizing video",
+            "flags": "i"
+          }
+        ],
         "done": [],
-        "limit": [],
+        "limit": [
+          {
+            "source": "quota exceeded",
+            "flags": "i"
+          },
+          {
+            "source": "you have reached your quota",
+            "flags": "i"
+          },
+          {
+            "source": "usage (?:cap|limit)",
+            "flags": "i"
+          },
+          {
+            "source": "you(?:'|’)ve reached (?:the|your) (?:current )?(?:usage |image )?limit",
+            "flags": "i"
+          },
+          {
+            "source": "usage cap",
+            "flags": "i"
+          },
+          {
+            "source": "image generation limit",
+            "flags": "i"
+          },
+          {
+            "source": "limit resets?",
+            "flags": "i"
+          },
+          {
+            "source": "try again after",
+            "flags": "i"
+          },
+          {
+            "source": "try again in",
+            "flags": "i"
+          },
+          {
+            "source": "لقد وصلت.*الحد",
+            "flags": "i"
+          },
+          {
+            "source": "تجاوزت.*الحد",
+            "flags": "i"
+          },
+          {
+            "source": "limite.*atteinte",
+            "flags": "i"
+          }
+        ],
         "refusal": [],
-        "error": []
+        "error": [
+          {
+            "source": "couldn(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "unable to generate",
+            "flags": "i"
+          },
+          {
+            "source": "something went wrong while generating",
+            "flags": "i"
+          },
+          {
+            "source": "image generation failed",
+            "flags": "i"
+          },
+          {
+            "source": "incorrectly classify|incorrectly classifying",
+            "flags": "i"
+          },
+          {
+            "source": "edit of an existing image",
+            "flags": "i"
+          },
+          {
+            "source": "won(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "cannot generate|can(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "will not generate",
+            "flags": "i"
+          },
+          {
+            "source": "refus(?:e|es|ing) to generate",
+            "flags": "i"
+          },
+          {
+            "source": "unable to create",
+            "flags": "i"
+          },
+          {
+            "source": "cannot create|can(?:'|’)t create",
+            "flags": "i"
+          },
+          {
+            "source": "will not create",
+            "flags": "i"
+          },
+          {
+            "source": "not generate",
+            "flags": "i"
+          },
+          {
+            "source": "not generating",
+            "flags": "i"
+          },
+          {
+            "source": "I am unable to",
+            "flags": "i"
+          },
+          {
+            "source": "I cannot",
+            "flags": "i"
+          },
+          {
+            "source": "I can't",
+            "flags": "i"
+          },
+          {
+            "source": "no image (?:was|is|will be) generated",
+            "flags": "i"
+          },
+          {
+            "source": "encountering (?:a|an) (?:problem|issue|error)",
+            "flags": "i"
+          },
+          {
+            "source": "(?:i am|i'm|i’m) having (?:some )?trouble",
+            "flags": "i"
+          },
+          {
+            "source": "ran into (?:a|an) (?:problem|issue|error)",
+            "flags": "i"
+          },
+          {
+            "source": "something went wrong",
+            "flags": "i"
+          },
+          {
+            "source": "please try again",
+            "flags": "i"
+          },
+          {
+            "source": "try (?:that|this|again) (?:again|in a moment)",
+            "flags": "i"
+          },
+          {
+            "source": "I have unified all .{0,120}instruction",
+            "flags": "i"
+          },
+          {
+            "source": "wait for your explicit instructions",
+            "flags": "i"
+          },
+          {
+            "source": "instead of (?:a new|generating)",
+            "flags": "i"
+          },
+          {
+            "source": "تعذر.*إنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "لم يقم بإنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "لا يمكن إنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "impossible de générer",
+            "flags": "i"
+          }
+        ],
+        "throttle": [
+          {
+            "source": "too many requests",
+            "flags": "i"
+          },
+          {
+            "source": "making requests too quickly",
+            "flags": "i"
+          },
+          {
+            "source": "temporarily limited access to your conversations",
+            "flags": "i"
+          },
+          {
+            "source": "please wait a few minutes before trying again",
+            "flags": "i"
+          }
+        ],
+        "captcha": [
+          {
+            "source": "captcha|recaptcha|hcaptcha|unusual traffic|verify you are (a )?human",
+            "flags": "i"
+          }
+        ],
+        "offline": [
+          {
+            "source": "chrome-error:\\/\\/|ERR_INTERNET_DISCONNECTED|ERR_NAME_NOT_RESOLVED|you are offline|no internet",
+            "flags": "i"
+          }
+        ],
+        "authRequired": [
+          {
+            "source": "log in to continue|sign in to continue|تسجيل الدخول للمتابعة|connectez-vous pour continuer",
+            "flags": "i"
+          }
+        ],
+        "referenceRequested": [
+          {
+            "source": "please (?:provide|upload|attach|share) (?:the|a) (?:reference|character|sample|source) image",
+            "flags": "i"
+          },
+          {
+            "source": "provide (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "upload (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "need (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "send (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "working with a reference",
+            "flags": "i"
+          },
+          {
+            "source": "based on the reference",
+            "flags": "i"
+          },
+          {
+            "source": "please upload the \\d+ exact page images",
+            "flags": "i"
+          },
+          {
+            "source": "upload the \\d+ exact page images",
+            "flags": "i"
+          },
+          {
+            "source": "please upload the .{0,80}page images",
+            "flags": "i"
+          },
+          {
+            "source": "upload the .{0,40}page images directly in this chat",
+            "flags": "i"
+          },
+          {
+            "source": "aren't available to the image editor",
+            "flags": "i"
+          },
+          {
+            "source": "are not available to the image editor",
+            "flags": "i"
+          },
+          {
+            "source": "usable image targets",
+            "flags": "i"
+          },
+          {
+            "source": "usable visual inputs",
+            "flags": "i"
+          },
+          {
+            "source": "as usable (?:visual|image) inputs",
+            "flags": "i"
+          },
+          {
+            "source": "image[- ]generation tool does not (?:currently )?have",
+            "flags": "i"
+          },
+          {
+            "source": "file[- ]library material",
+            "flags": "i"
+          },
+          {
+            "source": "I can see the reference PDF",
+            "flags": "i"
+          },
+          {
+            "source": "reference PDF, but the four page images",
+            "flags": "i"
+          },
+          {
+            "source": "صورة مرجعية",
+            "flags": "i"
+          },
+          {
+            "source": "إرفاق.*صورة",
+            "flags": "i"
+          },
+          {
+            "source": "تقديم.*صورة",
+            "flags": "i"
+          },
+          {
+            "source": "image de référence",
+            "flags": "i"
+          }
+        ]
       },
       "anchors": {},
-      "flows": {},
+      "flows": {
+        "fillComposer": [
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "fill"
+          },
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "insertText",
+            "note": "only when fill throws (Quill <rich-textarea>, d1fe25da)"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "spaceBackspace"
+          },
+          {
+            "do": "verify",
+            "target": "composer",
+            "strategy": "composerContains"
+          },
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "domInject"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "nudge"
+          },
+          {
+            "do": "verify",
+            "target": "composer",
+            "strategy": "composerContains"
+          }
+        ],
+        "send": [
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "cssList"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "roleName"
+          },
+          {
+            "do": "wait",
+            "target": "composer",
+            "strategy": "sendWake",
+            "note": "nudge the composer at timings.sendNudgeAtMs (c41f3741)"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "cssAny",
+            "note": "after the budget: any visible send"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "roleAny"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "enter",
+            "key": "Enter",
+            "note": "when the click fails or the button is disabled"
+          }
+        ],
+        "attach": [
+          {
+            "do": "upload",
+            "target": "attach",
+            "strategy": "fileChooser"
+          },
+          {
+            "do": "upload",
+            "target": "attach",
+            "strategy": "fileChooserOneByOne"
+          },
+          {
+            "do": "upload",
+            "target": "fileInput",
+            "strategy": "hiddenFileInput"
+          },
+          {
+            "do": "upload",
+            "target": "composer",
+            "strategy": "clipboardPaste"
+          },
+          {
+            "do": "upload",
+            "target": "dropHost",
+            "strategy": "syntheticDrop"
+          },
+          {
+            "do": "upload",
+            "target": "composer",
+            "strategy": "syntheticPaste"
+          },
+          {
+            "do": "upload",
+            "target": "dropHostDocument",
+            "strategy": "syntheticDropOnDocument"
+          }
+        ],
+        "openGem": [
+          {
+            "do": "verify",
+            "strategy": "notOnSignIn"
+          },
+          {
+            "do": "verify",
+            "target": "gemDeletedBanner",
+            "strategy": "gemNotDeleted"
+          },
+          {
+            "do": "verify",
+            "strategy": "rightGem",
+            "note": "the id the share link resolved to counts as right (0.2.25)"
+          },
+          {
+            "do": "verify",
+            "strategy": "imageCreatorMode"
+          },
+          {
+            "do": "verify",
+            "target": "imageToolArmed",
+            "strategy": "notImageStudio"
+          },
+          {
+            "do": "wait",
+            "strategy": "landSettle",
+            "ms": 400
+          },
+          {
+            "do": "click",
+            "target": "newChat",
+            "strategy": "newChat"
+          },
+          {
+            "do": "wait",
+            "strategy": "retry",
+            "ms": 800,
+            "note": "three checks at most"
+          }
+        ],
+        "newChat": [
+          {
+            "do": "verify",
+            "strategy": "urlHasNoChatId"
+          },
+          {
+            "do": "verify",
+            "target": "userTurn",
+            "strategy": "noUserTurns"
+          },
+          {
+            "do": "wait",
+            "strategy": "settle",
+            "ms": 1500
+          }
+        ],
+        "waitReply": [
+          {
+            "do": "read",
+            "target": "stop",
+            "strategy": "stopControl"
+          },
+          {
+            "do": "read",
+            "target": "busy",
+            "strategy": "busyMarkers"
+          },
+          {
+            "do": "read",
+            "target": "assistantText",
+            "strategy": "draftText"
+          },
+          {
+            "do": "read",
+            "target": "replyControls",
+            "strategy": "collapsed"
+          },
+          {
+            "do": "click",
+            "target": "replyControls",
+            "strategy": "expandCollapsed"
+          }
+        ],
+        "findImage": [
+          {
+            "do": "read",
+            "target": "imageContainer",
+            "strategy": "container"
+          },
+          {
+            "do": "read",
+            "target": "generatedImage",
+            "strategy": "alt"
+          },
+          {
+            "do": "read",
+            "target": "generatedImage",
+            "strategy": "inline"
+          },
+          {
+            "do": "read",
+            "target": "assistantMessageImage",
+            "strategy": "reply"
+          }
+        ],
+        "downloadFullSize": [
+          {
+            "do": "wait",
+            "target": "generatedImage",
+            "strategy": "hoverPicture",
+            "ms": 3000
+          },
+          {
+            "do": "read",
+            "target": "imageActionButton",
+            "strategy": "findControl"
+          },
+          {
+            "do": "wait",
+            "target": "imageActionButton",
+            "strategy": "retryFind",
+            "ms": 1500
+          },
+          {
+            "do": "click",
+            "target": "imageActionButton",
+            "strategy": "control",
+            "ms": 10000
+          },
+          {
+            "do": "wait",
+            "strategy": "download",
+            "ms": 45000
+          },
+          {
+            "do": "verify",
+            "strategy": "acceptFullSize"
+          }
+        ],
+        "armImage": [
+          {
+            "do": "press",
+            "strategy": "escape"
+          },
+          {
+            "do": "click",
+            "target": "imageTool",
+            "strategy": "roleMenuItem"
+          },
+          {
+            "do": "click",
+            "target": "imageTool",
+            "strategy": "roleButton"
+          },
+          {
+            "do": "click",
+            "target": "attachMenu",
+            "strategy": "attachMenuItem"
+          },
+          {
+            "do": "click",
+            "target": "attach",
+            "strategy": "openAttachMenu",
+            "note": "then the three clicks above again"
+          }
+        ],
+        "armVideo": [
+          {
+            "do": "press",
+            "strategy": "escape"
+          },
+          {
+            "do": "click",
+            "target": "composerTools",
+            "strategy": "videoChip"
+          },
+          {
+            "do": "click",
+            "target": "attach",
+            "strategy": "openAttachMenu"
+          }
+        ],
+        "armModel": [
+          {
+            "do": "click",
+            "target": "modePicker",
+            "strategy": "openPicker"
+          },
+          {
+            "do": "click",
+            "target": "menuItems",
+            "strategy": "proOption"
+          },
+          {
+            "do": "press",
+            "strategy": "escape",
+            "note": "when the picker offers no Pro"
+          }
+        ]
+      },
       "selectors": {
         "composer": [
           "rich-textarea [contenteditable=\"true\"]",
@@ -337,6 +3331,58 @@
         ],
         "assistantMessage": "model-response, response-container, chat-app message-content, .message-content",
         "assistantText": "model-response message-content, response-container .message-content, chat-app message-content, .message-content"
+      },
+      "regions": {
+        "chatList": {
+          "css": "bard-sidenav, mat-sidenav, conversations-list, [data-test-id=\"conversation\"]",
+          "linkCss": "a[href*=\"/app/\"], a[href*=\"/gem/\"], a[href*=\"/c/\"]",
+          "href": {
+            "source": "\\/(?:app|gem|c)\\/",
+            "flags": ""
+          },
+          "note": "The side panel and its list of old chats (3be6a498, 09-20), never an ancestor of the chat window (review 09-29)."
+        },
+        "controlArea": {
+          "css": "input-container, input-area-v2, toolbox-drawer, .cdk-overlay-container, [role=\"menu\"]",
+          "note": "Where Send and the image tool live: the message box, its tools drawer, an open menu. A guarded name lookup looks only here (09-29: a gem's start page shows the gem's name and its recent chats in the chat window, named like the tool)."
+        },
+        "sideList": {
+          "css": "nav, side-navigation, bard-sidenav, mat-sidenav, .bot-recent-chats, conversations-list",
+          "note": "Removed before the conversation text is read (findClipInGemRecent)."
+        },
+        "replyContainer": {
+          "css": "model-response:last-of-type, response-container:last-of-type",
+          "note": "The newest reply: where a collapsed answer is expanded."
+        }
+      },
+      "timings": {
+        "sendNudgeAtMs": [
+          3000,
+          6000,
+          9000
+        ],
+        "submitButtonMs": 60000,
+        "submitClickMs": 15000,
+        "sessionSettleMs": 12000,
+        "sessionPollMs": 500,
+        "composerClickMs": 10000,
+        "fillSettleMs": 500,
+        "nudgeSettleMs": 300,
+        "escapeSettleMs": 200,
+        "armSettleMs": 350,
+        "armMenuSettleMs": 300,
+        "fileChooserMs": 15000,
+        "fileChooserOneByOneMs": 12000,
+        "chipIncreaseMs": 20000,
+        "clipboardChipMs": 12000,
+        "attachMenuSettleMs": 400,
+        "uploadMenuSettleMs": 300,
+        "fileInputSettleMs": 1200,
+        "extraFileSettleMs": 600,
+        "strategySettleMs": 200,
+        "modelPickerSettleMs": 900,
+        "videoArmSettleMs": 600,
+        "videoMenuSettleMs": 400
       }
     },
     "meta": {
@@ -398,6 +3444,384 @@
             "role": "button",
             "name": "signIn"
           }
+        ],
+        "notice": [
+          {
+            "kind": "hook",
+            "css": "[role=\"alert\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"dialog\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[aria-live=\"assertive\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"toast\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"limit\"]"
+          }
+        ],
+        "captchaFrame": [
+          {
+            "kind": "hook",
+            "css": "iframe[src*=\"recaptcha\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "iframe[src*=\"hcaptcha\"]"
+          }
+        ],
+        "fileInput": [
+          {
+            "kind": "hook",
+            "css": "input[type=\"file\"]"
+          }
+        ],
+        "attachmentChip": [
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove file\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove attachment\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove photo\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"file-thumbnail\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"attachment\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [data-testid*=\"composer-file\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[alt*=\"preview\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form img[src^=\"data:image\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label*=\"Remove\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 img[src^=\"data:image\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview img"
+          },
+          {
+            "kind": "css",
+            "css": "file-preview img"
+          },
+          {
+            "kind": "css",
+            "css": "rich-textarea img[src^=\"blob:\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"Remove attached\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "[data-test-id*=\"attachment\"] img"
+          },
+          {
+            "kind": "css",
+            "css": "img[src^=\"blob:\"][alt*=\"upload\" i]"
+          }
+        ],
+        "removeAttachmentButton": [
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove file\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove attachment\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "form button[aria-label*=\"Remove photo\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 button[aria-label*=\"Remove\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview button"
+          },
+          {
+            "kind": "css",
+            "css": "file-preview button[aria-label*=\"Remove\" i]"
+          }
+        ],
+        "uploadProgress": [
+          {
+            "kind": "css",
+            "css": "form [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form .animate-spin"
+          },
+          {
+            "kind": "css",
+            "css": "form [class*=\"progress\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form [class*=\"loading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "form svg circle[stroke-dasharray]"
+          },
+          {
+            "kind": "css",
+            "css": "[data-testid*=\"upload-progress\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"Uploading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "[aria-label*=\"uploading\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-progress"
+          },
+          {
+            "kind": "css",
+            "css": "file-upload-progress"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "input-area-v2 mat-progress-spinner"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview [role=\"progressbar\"]"
+          },
+          {
+            "kind": "css",
+            "css": "uploader-file-preview mat-progress-spinner"
+          }
+        ],
+        "assistantMessageExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"assistant\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"assistant\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"model\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": ".message-content"
+          },
+          {
+            "kind": "hook",
+            "css": "model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": ".model-turn"
+          },
+          {
+            "kind": "hook",
+            "css": "chat-turn"
+          }
+        ],
+        "userTurnExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "user-query"
+          }
+        ],
+        "imageSurfaceExtract": [
+          {
+            "kind": "hook",
+            "css": "[data-testid=\"image-gen-card\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid*=\"image-gen\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "div[id^=\"image-\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "generated-image"
+          },
+          {
+            "kind": "hook",
+            "css": "single-image"
+          },
+          {
+            "kind": "hook",
+            "css": "image-viewer"
+          },
+          {
+            "kind": "hook",
+            "css": "media-viewer"
+          },
+          {
+            "kind": "hook",
+            "css": "model-response"
+          },
+          {
+            "kind": "hook",
+            "css": "response-container"
+          },
+          {
+            "kind": "hook",
+            "css": "picture"
+          },
+          {
+            "kind": "hook",
+            "css": "div[data-pressable-container=\"true\"]"
+          }
+        ],
+        "replyControls": [
+          {
+            "kind": "hook",
+            "css": "button"
+          },
+          {
+            "kind": "hook",
+            "css": "[role=\"button\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "a"
+          }
+        ],
+        "userTurn": [
+          {
+            "kind": "hook",
+            "css": "user-query"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-turn=\"user\"]"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-message-author-role=\"user\"]"
+          }
+        ],
+        "dropHostDocument": [
+          {
+            "kind": "hook",
+            "css": "input-area-v2"
+          },
+          {
+            "kind": "hook",
+            "css": ".input-area"
+          }
+        ],
+        "fallbackImage": [
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Generated image\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Created with Imagen\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "img[alt*=\"Meta AI\" i]"
+          },
+          {
+            "kind": "css",
+            "css": "generated-image img"
+          },
+          {
+            "kind": "css",
+            "css": "single-image img"
+          },
+          {
+            "kind": "css",
+            "css": "model-response img"
+          },
+          {
+            "kind": "css",
+            "css": "response-container img"
+          },
+          {
+            "kind": "css",
+            "css": ".message-content img"
+          }
         ]
       },
       "words": {
@@ -416,17 +3840,559 @@
         "composer": {
           "source": "(message|ask|prompt|enter a prompt|اسأل|رسالة|demander|message)",
           "flags": "i"
+        },
+        "signInRole": {
+          "source": "^(log in|sign in|تسجيل الدخول|connexion)$",
+          "flags": "i"
+        },
+        "signInName": {
+          "source": "^(sign in|log in)$",
+          "flags": "i"
+        },
+        "sendButton": {
+          "source": "^\\s*(send|submit|إرسال|أرسل|envoyer|enviar|invia|senden)(?=\\s|$)(?![^]*feedback)",
+          "flags": "i"
+        },
+        "stop": {
+          "source": "^\\s*(stop|stop response|stop generating|arr[êe]ter|detener|parar|停止|إيقاف)\\b",
+          "flags": "i"
+        },
+        "showMore": {
+          "source": "show more|show all|expand|see more|view more|show full",
+          "flags": "i"
+        },
+        "showMoreCollapsed": {
+          "source": "show more|see more|view more|show full|expand",
+          "flags": "i"
+        },
+        "uploadMenuExclude": {
+          "source": "camera|take photo|screenshot|google drive|onedrive|dropbox|connect|apps|gpt|canvas|search|sora|imagen|create image|video|music",
+          "flags": "i"
+        },
+        "uploadMenuItem": {
+          "source": "photo|file|upload|computer|device|image|صور|ملف|إرفاق|fichier|add",
+          "flags": "i"
         }
       },
       "phrases": {
-        "busy": [],
+        "busy": [
+          {
+            "source": "generating image",
+            "flags": "i"
+          },
+          {
+            "source": "creating image",
+            "flags": "i"
+          },
+          {
+            "source": "generating video",
+            "flags": "i"
+          },
+          {
+            "source": "creating video",
+            "flags": "i"
+          },
+          {
+            "source": "generating your video",
+            "flags": "i"
+          },
+          {
+            "source": "generating",
+            "flags": "i"
+          },
+          {
+            "source": "creating",
+            "flags": "i"
+          },
+          {
+            "source": "veo",
+            "flags": "i"
+          },
+          {
+            "source": "finishing up",
+            "flags": "i"
+          },
+          {
+            "source": "finalizing image",
+            "flags": "i"
+          },
+          {
+            "source": "finalizing video",
+            "flags": "i"
+          }
+        ],
         "done": [],
-        "limit": [],
+        "limit": [
+          {
+            "source": "quota exceeded",
+            "flags": "i"
+          },
+          {
+            "source": "you have reached your quota",
+            "flags": "i"
+          },
+          {
+            "source": "usage (?:cap|limit)",
+            "flags": "i"
+          },
+          {
+            "source": "you(?:'|’)ve reached (?:the|your) (?:current )?(?:usage |image )?limit",
+            "flags": "i"
+          },
+          {
+            "source": "usage cap",
+            "flags": "i"
+          },
+          {
+            "source": "image generation limit",
+            "flags": "i"
+          },
+          {
+            "source": "limit resets?",
+            "flags": "i"
+          },
+          {
+            "source": "try again after",
+            "flags": "i"
+          },
+          {
+            "source": "try again in",
+            "flags": "i"
+          },
+          {
+            "source": "لقد وصلت.*الحد",
+            "flags": "i"
+          },
+          {
+            "source": "تجاوزت.*الحد",
+            "flags": "i"
+          },
+          {
+            "source": "limite.*atteinte",
+            "flags": "i"
+          }
+        ],
         "refusal": [],
-        "error": []
+        "error": [
+          {
+            "source": "couldn(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "unable to generate",
+            "flags": "i"
+          },
+          {
+            "source": "something went wrong while generating",
+            "flags": "i"
+          },
+          {
+            "source": "image generation failed",
+            "flags": "i"
+          },
+          {
+            "source": "incorrectly classify|incorrectly classifying",
+            "flags": "i"
+          },
+          {
+            "source": "edit of an existing image",
+            "flags": "i"
+          },
+          {
+            "source": "won(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "cannot generate|can(?:'|’)t generate",
+            "flags": "i"
+          },
+          {
+            "source": "will not generate",
+            "flags": "i"
+          },
+          {
+            "source": "refus(?:e|es|ing) to generate",
+            "flags": "i"
+          },
+          {
+            "source": "unable to create",
+            "flags": "i"
+          },
+          {
+            "source": "cannot create|can(?:'|’)t create",
+            "flags": "i"
+          },
+          {
+            "source": "will not create",
+            "flags": "i"
+          },
+          {
+            "source": "not generate",
+            "flags": "i"
+          },
+          {
+            "source": "not generating",
+            "flags": "i"
+          },
+          {
+            "source": "I am unable to",
+            "flags": "i"
+          },
+          {
+            "source": "I cannot",
+            "flags": "i"
+          },
+          {
+            "source": "I can't",
+            "flags": "i"
+          },
+          {
+            "source": "no image (?:was|is|will be) generated",
+            "flags": "i"
+          },
+          {
+            "source": "encountering (?:a|an) (?:problem|issue|error)",
+            "flags": "i"
+          },
+          {
+            "source": "(?:i am|i'm|i’m) having (?:some )?trouble",
+            "flags": "i"
+          },
+          {
+            "source": "ran into (?:a|an) (?:problem|issue|error)",
+            "flags": "i"
+          },
+          {
+            "source": "something went wrong",
+            "flags": "i"
+          },
+          {
+            "source": "please try again",
+            "flags": "i"
+          },
+          {
+            "source": "try (?:that|this|again) (?:again|in a moment)",
+            "flags": "i"
+          },
+          {
+            "source": "I have unified all .{0,120}instruction",
+            "flags": "i"
+          },
+          {
+            "source": "wait for your explicit instructions",
+            "flags": "i"
+          },
+          {
+            "source": "instead of (?:a new|generating)",
+            "flags": "i"
+          },
+          {
+            "source": "تعذر.*إنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "لم يقم بإنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "لا يمكن إنشاء",
+            "flags": "i"
+          },
+          {
+            "source": "impossible de générer",
+            "flags": "i"
+          }
+        ],
+        "throttle": [
+          {
+            "source": "too many requests",
+            "flags": "i"
+          },
+          {
+            "source": "making requests too quickly",
+            "flags": "i"
+          },
+          {
+            "source": "temporarily limited access to your conversations",
+            "flags": "i"
+          },
+          {
+            "source": "please wait a few minutes before trying again",
+            "flags": "i"
+          }
+        ],
+        "captcha": [
+          {
+            "source": "captcha|recaptcha|hcaptcha|unusual traffic|verify you are (a )?human",
+            "flags": "i"
+          }
+        ],
+        "offline": [
+          {
+            "source": "chrome-error:\\/\\/|ERR_INTERNET_DISCONNECTED|ERR_NAME_NOT_RESOLVED|you are offline|no internet",
+            "flags": "i"
+          }
+        ],
+        "authRequired": [
+          {
+            "source": "log in to continue|sign in to continue|تسجيل الدخول للمتابعة|connectez-vous pour continuer",
+            "flags": "i"
+          }
+        ],
+        "referenceRequested": [
+          {
+            "source": "please (?:provide|upload|attach|share) (?:the|a) (?:reference|character|sample|source) image",
+            "flags": "i"
+          },
+          {
+            "source": "provide (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "upload (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "need (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "send (?:the|a) (?:reference|character) image",
+            "flags": "i"
+          },
+          {
+            "source": "working with a reference",
+            "flags": "i"
+          },
+          {
+            "source": "based on the reference",
+            "flags": "i"
+          },
+          {
+            "source": "please upload the \\d+ exact page images",
+            "flags": "i"
+          },
+          {
+            "source": "upload the \\d+ exact page images",
+            "flags": "i"
+          },
+          {
+            "source": "please upload the .{0,80}page images",
+            "flags": "i"
+          },
+          {
+            "source": "upload the .{0,40}page images directly in this chat",
+            "flags": "i"
+          },
+          {
+            "source": "aren't available to the image editor",
+            "flags": "i"
+          },
+          {
+            "source": "are not available to the image editor",
+            "flags": "i"
+          },
+          {
+            "source": "usable image targets",
+            "flags": "i"
+          },
+          {
+            "source": "usable visual inputs",
+            "flags": "i"
+          },
+          {
+            "source": "as usable (?:visual|image) inputs",
+            "flags": "i"
+          },
+          {
+            "source": "image[- ]generation tool does not (?:currently )?have",
+            "flags": "i"
+          },
+          {
+            "source": "file[- ]library material",
+            "flags": "i"
+          },
+          {
+            "source": "I can see the reference PDF",
+            "flags": "i"
+          },
+          {
+            "source": "reference PDF, but the four page images",
+            "flags": "i"
+          },
+          {
+            "source": "صورة مرجعية",
+            "flags": "i"
+          },
+          {
+            "source": "إرفاق.*صورة",
+            "flags": "i"
+          },
+          {
+            "source": "تقديم.*صورة",
+            "flags": "i"
+          },
+          {
+            "source": "image de référence",
+            "flags": "i"
+          }
+        ]
       },
       "anchors": {},
-      "flows": {},
+      "flows": {
+        "fillComposer": [
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "fill"
+          },
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "insertText",
+            "note": "only when fill throws (Quill <rich-textarea>, d1fe25da)"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "spaceBackspace"
+          },
+          {
+            "do": "verify",
+            "target": "composer",
+            "strategy": "composerContains"
+          },
+          {
+            "do": "type",
+            "target": "composer",
+            "strategy": "domInject"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "nudge"
+          },
+          {
+            "do": "verify",
+            "target": "composer",
+            "strategy": "composerContains"
+          }
+        ],
+        "send": [
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "cssList"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "roleName"
+          },
+          {
+            "do": "wait",
+            "target": "composer",
+            "strategy": "sendWake",
+            "note": "nudge the composer at timings.sendNudgeAtMs (c41f3741)"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "cssAny",
+            "note": "after the budget: any visible send"
+          },
+          {
+            "do": "click",
+            "target": "send",
+            "strategy": "roleAny"
+          },
+          {
+            "do": "press",
+            "target": "composer",
+            "strategy": "enter",
+            "key": "Enter",
+            "note": "when the click fails or the button is disabled"
+          }
+        ],
+        "attach": [
+          {
+            "do": "upload",
+            "target": "attach",
+            "strategy": "fileChooser"
+          },
+          {
+            "do": "upload",
+            "target": "attach",
+            "strategy": "fileChooserOneByOne"
+          },
+          {
+            "do": "upload",
+            "target": "fileInput",
+            "strategy": "hiddenFileInput"
+          },
+          {
+            "do": "upload",
+            "target": "composer",
+            "strategy": "clipboardPaste"
+          },
+          {
+            "do": "upload",
+            "strategy": "syntheticDrop"
+          },
+          {
+            "do": "upload",
+            "target": "composer",
+            "strategy": "syntheticPaste"
+          },
+          {
+            "do": "upload",
+            "target": "dropHostDocument",
+            "strategy": "syntheticDropOnDocument"
+          }
+        ],
+        "newChat": [
+          {
+            "do": "verify",
+            "strategy": "urlHasNoChatId"
+          },
+          {
+            "do": "verify",
+            "target": "userTurn",
+            "strategy": "noUserTurns"
+          },
+          {
+            "do": "wait",
+            "strategy": "settle",
+            "ms": 1500
+          }
+        ],
+        "waitReply": [
+          {
+            "do": "read",
+            "target": "stop",
+            "strategy": "stopControl"
+          },
+          {
+            "do": "read",
+            "target": "busy",
+            "strategy": "busyMarkers"
+          },
+          {
+            "do": "read",
+            "strategy": "draftText"
+          },
+          {
+            "do": "read",
+            "target": "replyControls",
+            "strategy": "collapsed"
+          },
+          {
+            "do": "click",
+            "target": "replyControls",
+            "strategy": "expandCollapsed"
+          }
+        ]
+      },
       "selectors": {
         "composer": [
           "[contenteditable=\"true\"][role=\"textbox\"]",
@@ -464,6 +4430,1125 @@
           "button[aria-label*=\"Sign in\" i]",
           "[aria-label*=\"Log in\" i]",
           "[aria-label*=\"Sign in\" i]"
+        ]
+      },
+      "regions": {
+        "chatList": {
+          "css": "bard-sidenav, side-navigation-v2, mat-sidenav, nav, [role=\"navigation\"], conversations-list, [data-test-id*=\"conversation\" i], [class*=\"conversation\" i], [class*=\"chat-history\" i]",
+          "linkCss": "a[href*=\"/app/\"], a[href*=\"/gem/\"], a[href*=\"/c/\"]",
+          "href": {
+            "source": "\\/(?:app|gem|c)\\/",
+            "flags": ""
+          },
+          "note": "The side list of old chats (3be6a498, 09-20): no name or text lookup may land in it."
+        }
+      }
+    },
+    "canva": {
+      "targets": {
+        "create": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "create"
+          }
+        ],
+        "editorChrome": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "editorChrome"
+          }
+        ],
+        "share": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "share"
+          }
+        ],
+        "printReview": [
+          {
+            "kind": "text",
+            "text": "printReview"
+          }
+        ],
+        "editImagePanel": [
+          {
+            "kind": "text",
+            "text": "editImage"
+          }
+        ],
+        "magicLayersTool": [
+          {
+            "kind": "text",
+            "text": "magicLayersExact"
+          },
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "magicLayersExact"
+          }
+        ],
+        "loginControl": [
+          {
+            "kind": "css",
+            "css": "a[href*=\"/login\"]"
+          },
+          {
+            "kind": "css",
+            "css": "button:has-text(\"Log in\")"
+          },
+          {
+            "kind": "css",
+            "css": "a:has-text(\"Log in\")"
+          },
+          {
+            "kind": "hook",
+            "css": "[data-testid=\"login-button\"]"
+          }
+        ]
+      },
+      "words": {
+        "create": {
+          "source": "^create$|create a design|create design",
+          "flags": "i"
+        },
+        "editorChrome": {
+          "source": "share|uploads|apps",
+          "flags": "i"
+        },
+        "share": {
+          "source": "^share$",
+          "flags": "i"
+        },
+        "printReview": {
+          "source": "review your design",
+          "flags": "i"
+        },
+        "printReviewActions": {
+          "source": "auto-adjust|add to cart|checkout",
+          "flags": "i"
+        },
+        "reviewHeading": {
+          "source": "^review your design$",
+          "flags": "i"
+        },
+        "closeLabel": {
+          "source": "close|dismiss",
+          "flags": "i"
+        },
+        "toolbarEdit": {
+          "source": "(^|\\b)edit(\\b|$)",
+          "flags": "i"
+        },
+        "editImageAny": {
+          "source": "edit image",
+          "flags": "i"
+        },
+        "photoTools": {
+          "source": "bg remover|background remover|eraser|flip|effects|animate|position",
+          "flags": "i"
+        },
+        "toolbarLeaf": {
+          "source": "^(edit|bg remover|background remover|eraser|flip|effects|animate|position)$",
+          "flags": "i"
+        },
+        "editButton": {
+          "source": "^(edit|edit image)$",
+          "flags": "i"
+        },
+        "toolbarAnchor": {
+          "source": "^(bg remover|background remover)$",
+          "flags": "i"
+        },
+        "toolbarProof": {
+          "source": "^(eraser|flip|effects|animate|position)$",
+          "flags": "i"
+        },
+        "editExact": {
+          "source": "^edit$",
+          "flags": "i"
+        },
+        "magicLayersExact": {
+          "source": "^magic layers$",
+          "flags": "i"
+        },
+        "magicLayersTool": {
+          "source": "^(magic layers|magic layer)\\b",
+          "flags": "i"
+        },
+        "magicLayersBlocked": {
+          "source": "upgrade|not available|can't use magic layers|couldn['’]t (apply|process)|try again later",
+          "flags": "i"
+        },
+        "createLayers": {
+          "source": "^(create layers|apply magic layers)$",
+          "flags": "i"
+        },
+        "layerCount": {
+          "source": "(\\d+)\\s*(objects?|layers?|elements?)\\b",
+          "flags": "i"
+        },
+        "magicLayersAny": {
+          "source": "magic layers|magic layer",
+          "flags": "i"
+        },
+        "toolsLeaf": {
+          "source": "^(tools|see all)$",
+          "flags": "i"
+        },
+        "seeAll": {
+          "source": "^see all$",
+          "flags": "i"
+        },
+        "pageTitle": {
+          "source": "^page\\s*(\\d+)(?:\\s*[-–—:].*)?$",
+          "flags": "i"
+        },
+        "geometryCounter": {
+          "source": "^(\\d+)\\s*\\/\\s*(\\d+)$",
+          "flags": ""
+        },
+        "currentState": {
+          "source": "selected|current|active",
+          "flags": "i"
+        },
+        "stateOn": {
+          "source": "^(on|checked|active)$",
+          "flags": "i"
+        },
+        "editImage": {
+          "source": "^edit image$",
+          "flags": "i"
+        },
+        "createDesignHeading": {
+          "source": "^create a design$",
+          "flags": "i"
+        },
+        "dropzoneHeading": {
+          "source": "^drop your (content|files) here",
+          "flags": "i"
+        },
+        "uploadFilesExact": {
+          "source": "^upload files$",
+          "flags": "i"
+        },
+        "toolsHeading": {
+          "source": "^tools$",
+          "flags": "i"
+        },
+        "grabText": {
+          "source": "^grab text$",
+          "flags": "i"
+        },
+        "selectElements": {
+          "source": "^select elements$",
+          "flags": "i"
+        },
+        "enhance": {
+          "source": "^enhance$",
+          "flags": "i"
+        },
+        "reimagine": {
+          "source": "^reimagine$",
+          "flags": "i"
+        },
+        "selectWhatToGrab": {
+          "source": "^select what to grab$",
+          "flags": "i"
+        },
+        "magicGrab": {
+          "source": "^magic grab$",
+          "flags": "i"
+        },
+        "styleMatch": {
+          "source": "^style match$",
+          "flags": "i"
+        },
+        "filters": {
+          "source": "^filters$",
+          "flags": "i"
+        },
+        "shareDesign": {
+          "source": "^share design$",
+          "flags": "i"
+        },
+        "peopleWithAccess": {
+          "source": "^people with access$",
+          "flags": "i"
+        },
+        "copyLink": {
+          "source": "^copy link$",
+          "flags": "i"
+        },
+        "fileType": {
+          "source": "^file type$",
+          "flags": "i"
+        },
+        "download": {
+          "source": "^download$",
+          "flags": "i"
+        },
+        "pptxDocument": {
+          "source": "^microsoft powerpoint document$",
+          "flags": "i"
+        },
+        "bestForSharing": {
+          "source": "^best for sharing$",
+          "flags": "i"
+        },
+        "pptxExact": {
+          "source": "^pptx$",
+          "flags": "i"
+        },
+        "allText": {
+          "source": "^all text$",
+          "flags": "i"
+        },
+        "grab": {
+          "source": "^grab$",
+          "flags": "i"
+        },
+        "grabDetecting": {
+          "source": "detecting|finding (the )?text|scanning|analy[sz]ing",
+          "flags": "i"
+        },
+        "deselect": {
+          "source": "^deselect$",
+          "flags": "i"
+        },
+        "grabNoText": {
+          "source": "no text (was )?(found|detected)|couldn['’]t (find|detect) (any )?text|no text to grab|didn['’]t find any text",
+          "flags": "i"
+        },
+        "grabbing": {
+          "source": "grabbing( text)?…|grabbing text|extracting text|separating text",
+          "flags": "i"
+        },
+        "multipleFonts": {
+          "source": "^multiple fonts$",
+          "flags": "i"
+        },
+        "textFormat": {
+          "source": "^(bold|italic|underline|text colou?r|font size|decrease font size|increase font size)$",
+          "flags": "i"
+        },
+        "bgRemoverExact": {
+          "source": "^bg remover$",
+          "flags": "i"
+        },
+        "eraserExact": {
+          "source": "^eraser$",
+          "flags": "i"
+        },
+        "flipExact": {
+          "source": "^flip$",
+          "flags": "i"
+        },
+        "groupToolbar": {
+          "source": "^(group|ungroup)$",
+          "flags": "i"
+        },
+        "counterShape": {
+          "source": "\\d\\s*\\/\\s*\\d",
+          "flags": ""
+        },
+        "magicLayersWorking": {
+          "source": "creating layers|magic layers is working|separating (the )?layers|turning .{1,40} into layers|applying magic layers|preparing your layers",
+          "flags": "i"
+        },
+        "preparingDownload": {
+          "source": "preparing (your )?(download|file|design)|getting (your )?(design|download|file) ready|your download will start|downloading (your )?design",
+          "flags": "i"
+        },
+        "uploading": {
+          "source": "\\buploading\\b",
+          "flags": "i"
+        },
+        "selectPages": {
+          "source": "^select pages$",
+          "flags": "i"
+        },
+        "selectPagesOption": {
+          "source": "^(all|this page.*|custom)$",
+          "flags": "i"
+        },
+        "paywall": {
+          "source": "upgrade to canva pro|try canva pro|get canva pro|start your free (pro )?trial|unlock (this )?with (canva )?pro",
+          "flags": "i"
+        },
+        "tour": {
+          "source": "^(got it|not now|maybe later|skip tour)$",
+          "flags": "i"
+        },
+        "dismissLabel": {
+          "source": "dismiss|close",
+          "flags": "i"
+        },
+        "dropzoneText": {
+          "source": "drop your (files|content) here|upload files|upload folder|canva supports images",
+          "flags": "i"
+        },
+        "dropzoneDone": {
+          "source": "uploaded to uploads|imports in progress|currently being imported",
+          "flags": "i"
+        },
+        "privateLine": {
+          "source": "^private$",
+          "flags": "i"
+        },
+        "uploadWidget": {
+          "source": "items uploaded|uploaded to uploads|imports in progress",
+          "flags": "i"
+        },
+        "cancelLike": {
+          "source": "cancel|abort|stop upload|remove|delete",
+          "flags": "i"
+        },
+        "closeExact": {
+          "source": "^(close|dismiss|minimize)$",
+          "flags": "i"
+        },
+        "closeNamed": {
+          "source": "close (panel|window|dialog)",
+          "flags": "i"
+        },
+        "ownOpen": {
+          "source": "edit this pdf|open as (a )?design|^open$|imports in progress|currently being imported",
+          "flags": "i"
+        },
+        "importing": {
+          "source": "importing|uploading|converting|processing your (file|pdf|document)|preparing your (design|file)|this may take a (few )?(minutes|moments)",
+          "flags": "i"
+        },
+        "importClick": {
+          "source": "import files|import file|^upload$",
+          "flags": "i"
+        },
+        "importClickDefault": {
+          "source": "import file|^upload$",
+          "flags": "i"
+        },
+        "uploadName": {
+          "source": "^upload$|upload files",
+          "flags": "i"
+        },
+        "allPages": {
+          "source": "^all$",
+          "flags": "i"
+        }
+      },
+      "phrases": {
+        "busy": [
+          {
+            "source": "processing|turning .+ into|applying magic|magic layers is working|creating layers|extracting|separating|preparing your layers|working on it|just a (sec|moment|second)|hang tight|this may take",
+            "flags": "i"
+          }
+        ],
+        "done": [],
+        "limit": [],
+        "refusal": [],
+        "error": [
+          {
+            "source": "something went wrong|couldn['’]t|could not|failed|error|try again|not available|unable to",
+            "flags": "i"
+          }
+        ],
+        "throttle": [],
+        "captcha": [],
+        "offline": [
+          {
+            "source": "you['’]re offline|you are offline|reconnecting…|no internet connection|check your (internet )?connection",
+            "flags": "i"
+          }
+        ],
+        "authRequired": [],
+        "referenceRequested": []
+      },
+      "anchors": {
+        "markRules": {
+          "clickCss": "button, a, [role=\"button\"], [role=\"tab\"], [role=\"option\"], [role=\"menuitem\"], [role=\"menuitemradio\"], [role=\"radio\"], [role=\"switch\"], label, [tabindex]",
+          "minPx": 4,
+          "minOpacity": 0.05,
+          "reviewDepth": 14,
+          "reviewChars": 900,
+          "budget": 60000,
+          "leafMax": 90,
+          "scopeDepth": 12,
+          "scopeMinPx": 160,
+          "leftMax": 0.55,
+          "rightMin": 0.45,
+          "rowPx": 24
+        },
+        "back": {
+          "pattern": "^(back|go back)$",
+          "side": "left"
+        },
+        "magicLayersInTools": {
+          "pattern": "^magic layers?$",
+          "side": "left"
+        },
+        "toolsSeeAll": {
+          "pattern": "^see all$",
+          "sameRowAs": "^tools$",
+          "side": "left"
+        },
+        "grabTextTool": {
+          "pattern": "^grab text$",
+          "side": "left",
+          "exclude": "magic grab"
+        },
+        "grabAllText": {
+          "pattern": "^all text$",
+          "scopeHeading": "^select what to grab$"
+        },
+        "grabButton": {
+          "pattern": "^grab$",
+          "scopeHeading": "^select what to grab$"
+        },
+        "createButton": {
+          "pattern": "^(create|create a design)$"
+        },
+        "uploadTab": {
+          "pattern": "^upload$",
+          "scopeHeading": "^create a design$"
+        },
+        "closeCreateDesign": {
+          "pattern": "^(close|dismiss)$",
+          "scopeHeading": "^create a design$"
+        },
+        "uploadFiles": {
+          "pattern": "^upload files?$",
+          "exclude": "folder"
+        },
+        "shareButton": {
+          "pattern": "^share$",
+          "side": "right"
+        },
+        "downloadInShare": {
+          "pattern": "^download$",
+          "scopeHeading": "^share design$"
+        },
+        "downloadRight": {
+          "pattern": "^download$",
+          "side": "right"
+        },
+        "fileTypeDropdown": {
+          "pattern": "^(jpg|jpeg|png|pdf|svg|mp4|gif|pptx)\\b",
+          "scopeHeading": "^file type$",
+          "side": "right"
+        },
+        "pptxOption": {
+          "pattern": "^pptx\\b",
+          "side": "right",
+          "below": "^file type$"
+        },
+        "pptxByName": {
+          "pattern": "^microsoft powerpoint document$",
+          "side": "right"
+        },
+        "selectAllPages": {
+          "pattern": "^all$",
+          "scopeHeading": "^select pages$",
+          "side": "right"
+        },
+        "downloadButton": {
+          "pattern": "^download$",
+          "side": "right",
+          "below": "^(select pages|file type)$"
+        },
+        "byName": {
+          "roles": [
+            "button",
+            "link",
+            "menuitem",
+            "tab",
+            "option",
+            "switch"
+          ]
+        },
+        "tours": {
+          "names": [
+            {
+              "source": "^got it$",
+              "flags": "i"
+            },
+            {
+              "source": "not now",
+              "flags": "i"
+            },
+            {
+              "source": "maybe later",
+              "flags": "i"
+            },
+            {
+              "source": "^skip$",
+              "flags": "i"
+            },
+            {
+              "source": "skip tour",
+              "flags": "i"
+            }
+          ]
+        },
+        "magicLayersNames": {
+          "names": [
+            {
+              "source": "^magic layers$",
+              "flags": "i"
+            },
+            {
+              "source": "^magic layer$",
+              "flags": "i"
+            }
+          ]
+        },
+        "layersPanel": {
+          "names": [
+            {
+              "source": "^position$",
+              "flags": "i"
+            },
+            {
+              "source": "^layers$",
+              "flags": "i"
+            },
+            {
+              "source": "show layers",
+              "flags": "i"
+            },
+            {
+              "source": "positioning",
+              "flags": "i"
+            }
+          ]
+        },
+        "ungroup": {
+          "names": [
+            {
+              "source": "^ungroup$",
+              "flags": "i"
+            },
+            {
+              "source": "ungroup",
+              "flags": "i"
+            }
+          ]
+        },
+        "uploadControls": {
+          "names": [
+            {
+              "source": "import files",
+              "flags": "i"
+            },
+            {
+              "source": "import file",
+              "flags": "i"
+            },
+            {
+              "source": "upload files",
+              "flags": "i"
+            },
+            {
+              "source": "upload media",
+              "flags": "i"
+            },
+            {
+              "source": "upload image",
+              "flags": "i"
+            },
+            {
+              "source": "upload an image",
+              "flags": "i"
+            },
+            {
+              "source": "from (your )?(computer|device)",
+              "flags": "i"
+            },
+            {
+              "source": "choose files",
+              "flags": "i"
+            },
+            {
+              "source": "browse files",
+              "flags": "i"
+            },
+            {
+              "source": "^upload$",
+              "flags": "i"
+            }
+          ]
+        },
+        "convertPrompt": {
+          "names": [
+            {
+              "source": "edit (this )?(file|pdf|document)",
+              "flags": "i"
+            },
+            {
+              "source": "convert (to )?(a )?(canva )?design",
+              "flags": "i"
+            },
+            {
+              "source": "create (a )?design from",
+              "flags": "i"
+            },
+            {
+              "source": "open as (a )?design",
+              "flags": "i"
+            },
+            {
+              "source": "open (in )?canva",
+              "flags": "i"
+            },
+            {
+              "source": "^open$",
+              "flags": "i"
+            },
+            {
+              "source": "make (it )?editable",
+              "flags": "i"
+            },
+            {
+              "source": "import (to|into) (a )?design",
+              "flags": "i"
+            }
+          ]
+        },
+        "createNames": {
+          "names": [
+            {
+              "source": "^create$",
+              "flags": "i"
+            },
+            {
+              "source": "create a design",
+              "flags": "i"
+            },
+            {
+              "source": "create design",
+              "flags": "i"
+            }
+          ]
+        },
+        "importNames": {
+          "names": [
+            {
+              "source": "import files",
+              "flags": "i"
+            },
+            {
+              "source": "import file",
+              "flags": "i"
+            }
+          ]
+        },
+        "nudgeConvert": {
+          "names": [
+            {
+              "source": "edit (this )?(file|pdf|document)",
+              "flags": "i"
+            },
+            {
+              "source": "open as (a )?design",
+              "flags": "i"
+            },
+            {
+              "source": "^open$",
+              "flags": "i"
+            },
+            {
+              "source": "open (this )?(file|pdf|document)",
+              "flags": "i"
+            },
+            {
+              "source": "convert (to )?(a )?(canva )?design",
+              "flags": "i"
+            },
+            {
+              "source": "create (a )?design from",
+              "flags": "i"
+            },
+            {
+              "source": "make (it )?editable",
+              "flags": "i"
+            }
+          ]
+        },
+        "uploadsFallback": {
+          "names": [
+            {
+              "source": "imports in progress",
+              "flags": "i"
+            },
+            {
+              "source": "^uploads$",
+              "flags": "i"
+            },
+            {
+              "source": "^projects$",
+              "flags": "i"
+            }
+          ]
+        },
+        "observe": {
+          "clickableCss": "button, a, [role=\"button\"], [role=\"tab\"], [role=\"radio\"], [role=\"option\"], [role=\"menuitemradio\"], label, [tabindex]",
+          "disabledCss": "[aria-disabled=\"true\"], [disabled]",
+          "busyCss": "[role=\"progressbar\"], [aria-busy=\"true\"]",
+          "textFormatCss": "button[aria-label], [role=\"button\"][aria-label]",
+          "progressbarCss": "[role=\"progressbar\"]",
+          "alertCss": "[role=\"alert\"], [role=\"status\"], [aria-live=\"assertive\"], [aria-live=\"polite\"], [data-testid*=\"toast\" i]",
+          "dialogCss": "[role=\"dialog\"], [aria-modal=\"true\"]",
+          "fileTypeControlCss": "button, [role=\"combobox\"], [aria-haspopup]",
+          "minPx": 2,
+          "minOpacity": 0.05,
+          "budget": 60000,
+          "leafMax": 90,
+          "joinedChars": 20000,
+          "grabPanelNear": 420,
+          "counterBand": 170,
+          "counterMax": 14,
+          "alertMax": 240,
+          "dialogChars": 6000,
+          "fileTypeBelow": 90,
+          "fileTypeLeft": 20,
+          "selectPagesBelow": 80
+        },
+        "printReview": {
+          "headingCss": "h1, h2, h3, h4, [role=\"heading\"], div, span, p",
+          "panelCss": "aside, [role=\"dialog\"], [role=\"complementary\"]",
+          "buttonCss": "button, [role=\"button\"]",
+          "minLeft": 240,
+          "gap": 12
+        },
+        "clickExact": {
+          "css": "button, a, [role=\"button\"], [role=\"menuitem\"], [role=\"tab\"], [role=\"option\"]",
+          "reviewChars": 700,
+          "minPx": 6
+        },
+        "imageToolbar": {
+          "css": "[role=\"toolbar\"], [data-testid*=\"toolbar\" i], div, nav",
+          "maxChars": 420
+        },
+        "toolbarFinder": {
+          "css": "button, [role=\"button\"]",
+          "toolbarCss": "[role=\"toolbar\"]",
+          "reviewChars": 700
+        },
+        "clickLabeled": {
+          "css": "button, a, [role=\"button\"], [role=\"menuitem\"], [role=\"option\"], [role=\"tab\"], [aria-label]"
+        },
+        "canvasSurface": {
+          "css": "canvas, [data-testid*=\"canvas\" i]",
+          "minPx": 180,
+          "minRight": 90,
+          "point": [
+            0.5,
+            0.48
+          ],
+          "offsets": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              -22
+            ],
+            [
+              -28,
+              14
+            ],
+            [
+              22,
+              18
+            ]
+          ]
+        },
+        "toolbarEdit": {
+          "clickCss": "button, [role=\"button\"]",
+          "maxControlW": 220,
+          "maxControlH": 80,
+          "budget": 80000,
+          "rowPx": 14,
+          "gapMin": -4,
+          "gapMax": 160
+        },
+        "toolsSeeAllRow": {
+          "clickCss": "button, [role=\"button\"]",
+          "maxControlW": 220,
+          "maxControlH": 80,
+          "minLeft": 60,
+          "rowPx": 14,
+          "maxGap": 460
+        },
+        "pageTitle": {
+          "titleTemplate": "^page\\s*{n}(\\s*[-–—:]|\\s*$)",
+          "notInsideCss": "[data-testid*=\"thumbnail\" i], [class*=\"thumbnail\" i], [role=\"listitem\"]"
+        },
+        "pageSurface": {
+          "points": [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.3,
+              0.3
+            ],
+            [
+              0.7,
+              0.7
+            ],
+            [
+              0.5,
+              0.2
+            ]
+          ],
+          "titleMax": 40,
+          "notInsideCss": "[data-testid*=\"thumbnail\" i], [class*=\"thumbnail\" i], [role=\"listitem\"], [role=\"dialog\"]",
+          "counterTop": 0.7,
+          "css": "div, img, canvas, svg, section",
+          "minPx": 180,
+          "minLeft": 60,
+          "maxWidth": 0.9,
+          "excludeCss": "[role=\"dialog\"], aside",
+          "maxSurfaces": 400,
+          "aspectTolerance": 0.04,
+          "ratioMin": 0.5,
+          "ratioMax": 2,
+          "ownerAbove": 8,
+          "ownerBelow": 90,
+          "alignLeft": 80,
+          "bottomGap": 40,
+          "topLimit": 80,
+          "enoughPx": 160,
+          "enoughFraction": 0.3,
+          "soloFraction": 0.6,
+          "scrollAt": 0.4
+        },
+        "headerSurface": {
+          "css": "div, img, canvas, svg, section",
+          "minPx": 160,
+          "above": 6,
+          "below": 90,
+          "alignLeft": 80,
+          "fy": 0.42,
+          "minTop": 24,
+          "bottomGap": 80,
+          "defaultVh": 800,
+          "offsets": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              -30
+            ],
+            [
+              -36,
+              18
+            ],
+            [
+              30,
+              26
+            ],
+            [
+              0,
+              60
+            ]
+          ]
+        },
+        "editorScroll": {
+          "far": 0.9,
+          "near": 0.5,
+          "surface": 0.45
+        },
+        "pageCurrent": {
+          "css": "[aria-label], [aria-current], [aria-selected], button, [role=\"button\"]",
+          "labelTemplate": "page\\s*{n}\\b"
+        },
+        "pageThumbnail": {
+          "exactTemplate": "^page\\s*{n}\\b",
+          "labelTemplate": "page\\s*{n}\\b",
+          "thumbCss": [
+            "[aria-label=\"Page {n}\" i]",
+            "[aria-label*=\"Page {n}\" i]",
+            "[title=\"Page {n}\" i], [title*=\"Page {n}\" i]"
+          ]
+        },
+        "editorPageCount": {
+          "signalCss": "[aria-label], [title], [aria-roledescription], button, [role=\"button\"], [role=\"listitem\"], [data-page-index], [data-testid*=\"page\" i], [data-test-id*=\"page\" i], [role=\"status\"]",
+          "railCss": "[role=\"list\"], aside, nav, [data-testid*=\"page\" i], [aria-label*=\"page\" i]",
+          "railHasCss": "[aria-label*=\"Page\" i], [aria-label^=\"Page\"], [data-page-index]"
+        },
+        "layerCount": {
+          "labelCss": "[aria-label], [title], [role=\"status\"], [role=\"listitem\"]",
+          "treeCss": "[role=\"treeitem\"]",
+          "rowsCss": "[data-testid*=\"layer-item\" i], [data-test-id*=\"layer-item\" i], [data-testid*=\"layers-list\" i] [role=\"button\"], [aria-label*=\"layers\" i] [role=\"listitem\"]"
+        },
+        "errorToast": {
+          "css": "[role=\"alert\"], [role=\"status\"], [data-testid*=\"toast\" i]",
+          "buttonCss": "button, [role=\"button\"]"
+        },
+        "fileTypeList": {
+          "css": "[role=\"option\"], [role=\"listbox\"], [role=\"menu\"]",
+          "minLeft": 0.4,
+          "minW": 40,
+          "minH": 20,
+          "scrollPx": 500,
+          "offeredCss": "[role=\"option\"], [role=\"menuitem\"], [role=\"menuitemradio\"]"
+        },
+        "dropTargets": {
+          "css": "[role=\"dialog\"], [data-dropzone], [class*=\"dropzone\"], [class*=\"Dropzone\"], [aria-label*=\"Select media\"], [aria-label*=\"select media\"]"
+        },
+        "recentCards": {
+          "linkCss": "a[href*=\"/design/\"]",
+          "cardCss": "[role=\"listitem\"], li, article, [data-testid*=\"design\" i]",
+          "minW": 16,
+          "minH": 10
+        },
+        "uploadPanel": {
+          "widgetCss": "[role=\"dialog\"], [role=\"status\"], [aria-live], section, aside, div",
+          "buttonCss": "button, [role=\"button\"]",
+          "maxChars": 3500
+        },
+        "openImported": {
+          "css": "button, a, [role=\"button\"], [role=\"link\"], [role=\"listitem\"], [role=\"option\"]"
+        },
+        "importIndicator": {
+          "css": "[aria-label*=\"importing\" i], [aria-label*=\"uploading\" i], [aria-label*=\"converting\" i], [aria-label*=\"import\" i][role=\"progressbar\"]"
+        }
+      },
+      "flows": {
+        "makeEditable": [
+          {
+            "do": "click",
+            "target": "grabTextTool",
+            "strategy": "grabText",
+            "note": "Edit → See all (Tools) → Grab Text → All text → Grab"
+          },
+          {
+            "do": "click",
+            "target": "magicLayersInTools",
+            "strategy": "magicLayers",
+            "note": "fallback when Canva restricts Grab Text: Edit → Magic Layers"
+          }
+        ],
+        "selectImage": [
+          {
+            "do": "click",
+            "target": "pageSurface",
+            "strategy": "pageSurface",
+            "ms": 1500,
+            "note": "the page-shaped box under its \"Page N\" title; points are fractions of that box"
+          },
+          {
+            "do": "click",
+            "target": "headerSurface",
+            "strategy": "headerSurface",
+            "ms": 700,
+            "note": "the largest box right under the title; offsets from its point"
+          },
+          {
+            "do": "click",
+            "target": "canvasSurface",
+            "strategy": "canvasSurface",
+            "note": "the editor canvas; offsets from a fraction of its box, then a double click"
+          }
+        ],
+        "import": [
+          {
+            "do": "upload",
+            "target": "uploadFiles",
+            "strategy": "uploadFilesChooser",
+            "ms": 6000,
+            "note": "the real Upload files control while the file chooser is intercepted"
+          },
+          {
+            "do": "upload",
+            "strategy": "fileInput",
+            "note": "a hidden file input in the page or its frames"
+          },
+          {
+            "do": "upload",
+            "target": "dropTargets",
+            "strategy": "syntheticDrop",
+            "note": "a drop on the upload dialog"
+          },
+          {
+            "do": "upload",
+            "strategy": "lateChooser",
+            "ms": 8000,
+            "note": "a file chooser that opened late"
+          }
+        ],
+        "export": [
+          {
+            "do": "click",
+            "target": "shareButton",
+            "strategy": "shareMark"
+          },
+          {
+            "do": "click",
+            "target": "share",
+            "strategy": "shareByName",
+            "ms": 2500
+          },
+          {
+            "do": "click",
+            "target": "downloadInShare",
+            "strategy": "downloadInShare"
+          },
+          {
+            "do": "click",
+            "target": "downloadRight",
+            "strategy": "downloadRight",
+            "ms": 1500
+          },
+          {
+            "do": "click",
+            "target": "fileTypeDropdown",
+            "strategy": "fileTypeDropdown",
+            "ms": 2500
+          },
+          {
+            "do": "click",
+            "target": "pptxOption",
+            "strategy": "pptxOption"
+          },
+          {
+            "do": "click",
+            "target": "pptxByName",
+            "strategy": "pptxByName",
+            "ms": 700
+          },
+          {
+            "do": "read",
+            "target": "fileTypeList",
+            "strategy": "scrollFileTypeList",
+            "note": "scroll the File type list (its own container) to reach PPTX"
+          },
+          {
+            "do": "click",
+            "target": "selectAllPages",
+            "strategy": "selectAllPages",
+            "ms": 1500
+          },
+          {
+            "do": "click",
+            "target": "downloadButton",
+            "strategy": "download"
+          }
+        ]
+      },
+      "timings": {
+        "controlWaitMs": 30000,
+        "pptxOptionMs": [
+          2500,
+          900
         ]
       }
     }
