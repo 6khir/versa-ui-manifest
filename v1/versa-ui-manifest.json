@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": 4,
-  "publishedAt": "2026-10-04T13:03:24.833Z",
+  "manifestVersion": 6,
+  "publishedAt": "2026-10-06T11:56:51.300Z",
   "minAppVersion": "1.0.14",
   "platforms": {
     "chatgpt": {
@@ -2523,6 +2523,10 @@
         },
         "videoToolArmed": {
           "source": "deselect\\s+videos?",
+          "flags": "i"
+        },
+        "imageToolOn": {
+          "source": "^(?:deselect|remove|unselect|turn off)\\s+(?:the\\s+)?(?:create\\s+)?images?(?:\\s+tool)?$",
           "flags": "i"
         },
         "modePicker": {
