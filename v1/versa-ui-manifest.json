@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": 8,
-  "publishedAt": "2026-10-16T17:49:39.834Z",
+  "manifestVersion": 9,
+  "publishedAt": "2026-10-16T19:58:55.490Z",
   "minAppVersion": "1.0.14",
   "platforms": {
     "chatgpt": {
