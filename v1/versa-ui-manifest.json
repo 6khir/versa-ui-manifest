@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": 10,
-  "publishedAt": "2026-10-16T20:51:06.787Z",
+  "manifestVersion": 11,
+  "publishedAt": "2026-10-31T19:59:20.189Z",
   "minAppVersion": "1.0.14",
   "platforms": {
     "chatgpt": {
@@ -4514,296 +4514,20 @@
         ]
       },
       "words": {
-        "create": {
-          "source": "^create$|create a design|create design",
-          "flags": "i"
-        },
-        "editorChrome": {
-          "source": "share|uploads|apps",
-          "flags": "i"
-        },
-        "share": {
-          "source": "^share$",
-          "flags": "i"
-        },
-        "printReview": {
-          "source": "review your design",
-          "flags": "i"
-        },
-        "printReviewActions": {
-          "source": "auto-adjust|add to cart|checkout",
-          "flags": "i"
-        },
-        "reviewHeading": {
-          "source": "^review your design$",
-          "flags": "i"
-        },
-        "closeLabel": {
-          "source": "close|dismiss",
-          "flags": "i"
-        },
-        "toolbarEdit": {
-          "source": "(^|\\b)edit(\\b|$)",
-          "flags": "i"
-        },
-        "editImageAny": {
-          "source": "edit image",
-          "flags": "i"
-        },
-        "photoTools": {
-          "source": "bg remover|background remover|eraser|flip|effects|animate|position",
-          "flags": "i"
-        },
-        "toolbarLeaf": {
-          "source": "^(edit|bg remover|background remover|eraser|flip|effects|animate|position)$",
-          "flags": "i"
-        },
-        "editButton": {
-          "source": "^(edit|edit image)$",
-          "flags": "i"
-        },
-        "toolbarAnchor": {
-          "source": "^(bg remover|background remover)$",
-          "flags": "i"
-        },
-        "toolbarProof": {
-          "source": "^(eraser|flip|effects|animate|position)$",
-          "flags": "i"
-        },
-        "editExact": {
-          "source": "^edit$",
-          "flags": "i"
-        },
-        "magicLayersExact": {
-          "source": "^magic layers$",
-          "flags": "i"
-        },
-        "magicLayersTool": {
-          "source": "^(magic layers|magic layer)\\b",
-          "flags": "i"
-        },
-        "magicLayersBlocked": {
-          "source": "upgrade|not available|can't use magic layers|couldn['’]t (apply|process)|try again later",
-          "flags": "i"
-        },
-        "createLayers": {
-          "source": "^(create layers|apply magic layers)$",
-          "flags": "i"
-        },
-        "layerCount": {
-          "source": "(\\d+)\\s*(objects?|layers?|elements?)\\b",
-          "flags": "i"
-        },
-        "magicLayersAny": {
-          "source": "magic layers|magic layer",
-          "flags": "i"
-        },
-        "toolsLeaf": {
-          "source": "^(tools|see all)$",
-          "flags": "i"
-        },
-        "seeAll": {
-          "source": "^see all$",
-          "flags": "i"
-        },
-        "pageTitle": {
-          "source": "^page\\s*(\\d+)(?:\\s*[-–—:].*)?$",
-          "flags": "i"
-        },
-        "geometryCounter": {
-          "source": "^(\\d+)\\s*\\/\\s*(\\d+)$",
-          "flags": ""
-        },
-        "currentState": {
-          "source": "selected|current|active",
-          "flags": "i"
-        },
-        "stateOn": {
-          "source": "^(on|checked|active)$",
-          "flags": "i"
-        },
-        "editImage": {
-          "source": "^edit image$",
-          "flags": "i"
-        },
-        "createDesignHeading": {
-          "source": "^create a design$",
-          "flags": "i"
-        },
-        "dropzoneHeading": {
-          "source": "^drop your (content|files) here",
-          "flags": "i"
-        },
-        "uploadFilesExact": {
-          "source": "^upload files$",
-          "flags": "i"
-        },
-        "toolsHeading": {
-          "source": "^tools$",
-          "flags": "i"
-        },
-        "grabText": {
-          "source": "^grab text$",
-          "flags": "i"
-        },
-        "selectElements": {
-          "source": "^select elements$",
-          "flags": "i"
-        },
-        "enhance": {
-          "source": "^enhance$",
-          "flags": "i"
-        },
-        "reimagine": {
-          "source": "^reimagine$",
-          "flags": "i"
-        },
-        "selectWhatToGrab": {
-          "source": "^select what to grab$",
-          "flags": "i"
-        },
-        "magicGrab": {
-          "source": "^magic grab$",
-          "flags": "i"
-        },
-        "styleMatch": {
-          "source": "^style match$",
-          "flags": "i"
-        },
-        "filters": {
-          "source": "^filters$",
-          "flags": "i"
-        },
-        "shareDesign": {
-          "source": "^share design$",
-          "flags": "i"
-        },
-        "peopleWithAccess": {
-          "source": "^people with access$",
-          "flags": "i"
-        },
-        "copyLink": {
-          "source": "^copy link$",
-          "flags": "i"
-        },
-        "fileType": {
-          "source": "^file type$",
-          "flags": "i"
-        },
-        "download": {
-          "source": "^download$",
-          "flags": "i"
-        },
-        "pptxDocument": {
-          "source": "^microsoft powerpoint document$",
-          "flags": "i"
-        },
-        "bestForSharing": {
-          "source": "^best for sharing$",
-          "flags": "i"
-        },
-        "pptxExact": {
-          "source": "^pptx$",
+        "allPages": {
+          "source": "^all$",
           "flags": "i"
         },
         "allText": {
           "source": "^all text$",
           "flags": "i"
         },
-        "grab": {
-          "source": "^grab$",
-          "flags": "i"
-        },
-        "grabDetecting": {
-          "source": "detecting|finding (the )?text|scanning|analy[sz]ing",
-          "flags": "i"
-        },
-        "deselect": {
-          "source": "^deselect$",
-          "flags": "i"
-        },
-        "grabNoText": {
-          "source": "no text (was )?(found|detected)|couldn['’]t (find|detect) (any )?text|no text to grab|didn['’]t find any text",
-          "flags": "i"
-        },
-        "grabbing": {
-          "source": "grabbing( text)?…|grabbing text|extracting text|separating text",
-          "flags": "i"
-        },
-        "multipleFonts": {
-          "source": "^multiple fonts$",
-          "flags": "i"
-        },
-        "textFormat": {
-          "source": "^(bold|italic|underline|text colou?r|font size|decrease font size|increase font size)$",
+        "bestForSharing": {
+          "source": "^best for sharing$",
           "flags": "i"
         },
         "bgRemoverExact": {
           "source": "^bg remover$",
-          "flags": "i"
-        },
-        "eraserExact": {
-          "source": "^eraser$",
-          "flags": "i"
-        },
-        "flipExact": {
-          "source": "^flip$",
-          "flags": "i"
-        },
-        "groupToolbar": {
-          "source": "^(group|ungroup)$",
-          "flags": "i"
-        },
-        "counterShape": {
-          "source": "\\d\\s*\\/\\s*\\d",
-          "flags": ""
-        },
-        "magicLayersWorking": {
-          "source": "creating layers|magic layers is working|separating (the )?layers|turning .{1,40} into layers|applying magic layers|preparing your layers",
-          "flags": "i"
-        },
-        "preparingDownload": {
-          "source": "preparing (your )?(download|file|design)|getting (your )?(design|download|file) ready|your download will start|downloading (your )?design",
-          "flags": "i"
-        },
-        "uploading": {
-          "source": "\\buploading\\b",
-          "flags": "i"
-        },
-        "selectPages": {
-          "source": "^select pages$",
-          "flags": "i"
-        },
-        "selectPagesOption": {
-          "source": "^(all|this page.*|custom)$",
-          "flags": "i"
-        },
-        "paywall": {
-          "source": "upgrade to canva pro|try canva pro|get canva pro|start your free (pro )?trial|unlock (this )?with (canva )?pro",
-          "flags": "i"
-        },
-        "tour": {
-          "source": "^(got it|not now|maybe later|skip tour)$",
-          "flags": "i"
-        },
-        "dismissLabel": {
-          "source": "dismiss|close",
-          "flags": "i"
-        },
-        "dropzoneText": {
-          "source": "drop your (files|content) here|upload files|upload folder|canva supports images",
-          "flags": "i"
-        },
-        "dropzoneDone": {
-          "source": "uploaded to uploads|imports in progress|currently being imported",
-          "flags": "i"
-        },
-        "privateLine": {
-          "source": "^private$",
-          "flags": "i"
-        },
-        "uploadWidget": {
-          "source": "items uploaded|uploaded to uploads|imports in progress",
           "flags": "i"
         },
         "cancelLike": {
@@ -4814,16 +4538,128 @@
           "source": "^(close|dismiss|minimize)$",
           "flags": "i"
         },
+        "closeLabel": {
+          "source": "close|dismiss",
+          "flags": "i"
+        },
         "closeNamed": {
           "source": "close (panel|window|dialog)",
           "flags": "i"
         },
-        "ownOpen": {
-          "source": "edit this pdf|open as (a )?design|^open$|imports in progress|currently being imported",
+        "copyLink": {
+          "source": "^copy link$",
           "flags": "i"
         },
-        "importing": {
-          "source": "importing|uploading|converting|processing your (file|pdf|document)|preparing your (design|file)|this may take a (few )?(minutes|moments)",
+        "counterShape": {
+          "source": "\\d\\s*\\/\\s*\\d",
+          "flags": ""
+        },
+        "create": {
+          "source": "^create$|create a design|create design",
+          "flags": "i"
+        },
+        "createDesignHeading": {
+          "source": "^create a design$",
+          "flags": "i"
+        },
+        "createLayers": {
+          "source": "^(create layers|apply magic layers)$",
+          "flags": "i"
+        },
+        "currentState": {
+          "source": "selected|current|active",
+          "flags": "i"
+        },
+        "deselect": {
+          "source": "^deselect$",
+          "flags": "i"
+        },
+        "dismissLabel": {
+          "source": "dismiss|close",
+          "flags": "i"
+        },
+        "download": {
+          "source": "^download$",
+          "flags": "i"
+        },
+        "dropzoneDone": {
+          "source": "uploaded to uploads|imports in progress|currently being imported",
+          "flags": "i"
+        },
+        "dropzoneHeading": {
+          "source": "^drop your (content|files) here",
+          "flags": "i"
+        },
+        "dropzoneText": {
+          "source": "drop your (files|content) here|upload files|upload folder|canva supports images",
+          "flags": "i"
+        },
+        "editButton": {
+          "source": "^(edit|edit image)$",
+          "flags": "i"
+        },
+        "editExact": {
+          "source": "^edit$",
+          "flags": "i"
+        },
+        "editImage": {
+          "source": "^edit image$",
+          "flags": "i"
+        },
+        "editImageAny": {
+          "source": "edit image",
+          "flags": "i"
+        },
+        "editorChrome": {
+          "source": "share|uploads|apps",
+          "flags": "i"
+        },
+        "enhance": {
+          "source": "^enhance$",
+          "flags": "i"
+        },
+        "eraserExact": {
+          "source": "^eraser$",
+          "flags": "i"
+        },
+        "fileType": {
+          "source": "^file type$",
+          "flags": "i"
+        },
+        "filters": {
+          "source": "^filters$",
+          "flags": "i"
+        },
+        "flipExact": {
+          "source": "^flip$",
+          "flags": "i"
+        },
+        "geometryCounter": {
+          "source": "^(\\d+)\\s*\\/\\s*(\\d+)$",
+          "flags": ""
+        },
+        "grab": {
+          "source": "^grab$",
+          "flags": "i"
+        },
+        "grabDetecting": {
+          "source": "detecting|finding (the )?text|scanning|analy[sz]ing",
+          "flags": "i"
+        },
+        "grabNoText": {
+          "source": "no text (was )?(found|detected)|couldn['’]t (find|detect) (any )?text|no text to grab|didn['’]t find any text",
+          "flags": "i"
+        },
+        "grabText": {
+          "source": "^grab text$",
+          "flags": "i"
+        },
+        "grabbing": {
+          "source": "grabbing( text)?…|grabbing text|extracting text|separating text",
+          "flags": "i"
+        },
+        "groupToolbar": {
+          "source": "^(group|ungroup)$",
           "flags": "i"
         },
         "importClick": {
@@ -4834,12 +4670,176 @@
           "source": "import file|^upload$",
           "flags": "i"
         },
+        "importing": {
+          "source": "importing|uploading|converting|processing your (file|pdf|document)|preparing your (design|file)|this may take a (few )?(minutes|moments)",
+          "flags": "i"
+        },
+        "layerCount": {
+          "source": "(\\d+)\\s*(objects?|layers?|elements?)\\b",
+          "flags": "i"
+        },
+        "magicGrab": {
+          "source": "^magic grab$",
+          "flags": "i"
+        },
+        "magicLayersAny": {
+          "source": "magic layers|magic layer",
+          "flags": "i"
+        },
+        "magicLayersBlocked": {
+          "source": "upgrade|not available|can't use magic layers|couldn['’]t (apply|process)|try again later",
+          "flags": "i"
+        },
+        "magicLayersExact": {
+          "source": "^magic layers$",
+          "flags": "i"
+        },
+        "magicLayersTool": {
+          "source": "^(magic layers|magic layer)\\b",
+          "flags": "i"
+        },
+        "magicLayersWorking": {
+          "source": "creating layers|magic layers is working|separating (the )?layers|turning .{1,40} into layers|applying magic layers|preparing your layers",
+          "flags": "i"
+        },
+        "multipleFonts": {
+          "source": "^multiple fonts$",
+          "flags": "i"
+        },
+        "ownOpen": {
+          "source": "edit this pdf|open as (a )?design|^open$|imports in progress|currently being imported",
+          "flags": "i"
+        },
+        "pageTitle": {
+          "source": "^page\\s*(\\d+)(?:\\s*[-–—:].*)?$",
+          "flags": "i"
+        },
+        "paywall": {
+          "source": "upgrade to canva pro|try canva pro|get canva pro|start your free (pro )?trial|unlock (this )?with (canva )?pro",
+          "flags": "i"
+        },
+        "peopleWithAccess": {
+          "source": "^people with access$",
+          "flags": "i"
+        },
+        "photoTools": {
+          "source": "bg remover|background remover|eraser|flip|effects|animate|position",
+          "flags": "i"
+        },
+        "pptxDocument": {
+          "source": "^microsoft powerpoint document$",
+          "flags": "i"
+        },
+        "pptxExact": {
+          "source": "^pptx$",
+          "flags": "i"
+        },
+        "preparingDownload": {
+          "source": "preparing (your )?(download|file|design)|getting (your )?(design|download|file) ready|your download will start|downloading (your )?design",
+          "flags": "i"
+        },
+        "printReview": {
+          "source": "review your design",
+          "flags": "i"
+        },
+        "printReviewActions": {
+          "source": "auto-adjust|add to cart|checkout",
+          "flags": "i"
+        },
+        "privateLine": {
+          "source": "^private$",
+          "flags": "i"
+        },
+        "reimagine": {
+          "source": "^reimagine$",
+          "flags": "i"
+        },
+        "reviewHeading": {
+          "source": "^review your design$",
+          "flags": "i"
+        },
+        "seeAll": {
+          "source": "^see all$",
+          "flags": "i"
+        },
+        "selectElements": {
+          "source": "^select elements$",
+          "flags": "i"
+        },
+        "selectPages": {
+          "source": "^select pages$",
+          "flags": "i"
+        },
+        "selectPagesOption": {
+          "source": "^(all|this page.*|custom)$",
+          "flags": "i"
+        },
+        "selectWhatToGrab": {
+          "source": "^select what to grab$",
+          "flags": "i"
+        },
+        "share": {
+          "source": "^share$",
+          "flags": "i"
+        },
+        "shareDesign": {
+          "source": "^share design$",
+          "flags": "i"
+        },
+        "stateOn": {
+          "source": "^(on|checked|active)$",
+          "flags": "i"
+        },
+        "styleMatch": {
+          "source": "^style match$",
+          "flags": "i"
+        },
+        "textFormat": {
+          "source": "^(bold|italic|underline|text colou?r|font size|decrease font size|increase font size)$",
+          "flags": "i"
+        },
+        "toolbarAnchor": {
+          "source": "^(bg remover|background remover)$",
+          "flags": "i"
+        },
+        "toolbarEdit": {
+          "source": "(^|\\b)edit(\\b|$)",
+          "flags": "i"
+        },
+        "toolbarLeaf": {
+          "source": "^(edit|bg remover|background remover|eraser|flip|effects|animate|position)$",
+          "flags": "i"
+        },
+        "toolbarProof": {
+          "source": "^(eraser|flip|effects|animate|position)$",
+          "flags": "i"
+        },
+        "toolsHeading": {
+          "source": "^tools$",
+          "flags": "i"
+        },
+        "toolsLeaf": {
+          "source": "^(tools|see all)$",
+          "flags": "i"
+        },
+        "tour": {
+          "source": "^(got it|not now|maybe later|skip tour)$",
+          "flags": "i"
+        },
+        "uploadFilesExact": {
+          "source": "^upload files$",
+          "flags": "i"
+        },
         "uploadName": {
           "source": "^upload$|upload files",
           "flags": "i"
         },
-        "allPages": {
-          "source": "^all$",
+        "uploadWidget": {
+          "source": "items uploaded|uploaded to uploads|imports in progress",
+          "flags": "i"
+        },
+        "uploading": {
+          "source": "\\buploading\\b",
           "flags": "i"
         }
       },
@@ -5430,15 +5430,15 @@
         "makeEditable": [
           {
             "do": "click",
-            "target": "grabTextTool",
-            "strategy": "grabText",
-            "note": "Edit → See all (Tools) → Grab Text → All text → Grab"
+            "target": "magicLayersInTools",
+            "strategy": "magicLayers",
+            "note": "Magic Layers first: Edit → Magic Layers → Create layers"
           },
           {
             "do": "click",
-            "target": "magicLayersInTools",
-            "strategy": "magicLayers",
-            "note": "fallback when Canva restricts Grab Text: Edit → Magic Layers"
+            "target": "grabTextTool",
+            "strategy": "grabText",
+            "note": "fallback only when Canva restricts Magic Layers: Edit → See all (Tools) → Grab Text → All text → Grab"
           }
         ],
         "selectImage": [
